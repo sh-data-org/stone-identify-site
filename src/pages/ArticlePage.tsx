@@ -1,5 +1,5 @@
 import { Site } from '../components/Site';
-import { Download } from '../components/Download';
+import { AppDownloadCard } from '../components/AppDownloadCard';
 import { renderArticle } from '../features/articles/render';
 import { categories, type ArticleContent } from '../features/articles/schema';
 import { articles } from '../features/articles/content';
@@ -15,11 +15,10 @@ export function ArticlePage({ article }: { article: ArticleContent }) {
         </nav>
         <header className="article-heading">
           <h1>{article.title}</h1>
-          <p className="intro">{article.description}</p>
+          <p className="intro">{article.answer}</p>
           <p className="byline">
             <a href="/about/">Stone Identifier editorial team</a> · Updated {article.updated}
           </p>
-          <p className="article-answer">{article.answer}</p>
         </header>
         <div className="reading-layout">
           <div>
@@ -61,37 +60,10 @@ export function ArticlePage({ article }: { article: ArticleContent }) {
                 ))}
               <a href="/identification-checklist/">Printable observation sheet</a>
             </section>
-            <section className="article-download" aria-labelledby="article-download-title">
-              <img
-                className="app-icon"
-                src="/images/app-icon.jpg"
-                alt="Rock Scan app icon"
-                width="72"
-                height="72"
-                loading="lazy"
-              />
-              <p className="app-cta-label">ROCK SCAN FOR IPHONE</p>
-              <h2 id="article-download-title">Have a stone of your own?</h2>
-              <p>
-                Take a photo or choose one from your library. Explore possible matches in Rock Scan,
-                then compare the details with what you learned in this guide.
-              </p>
-              <Download label="Download Rock Scan on the App Store" />
-              <p className="app-cta-note">Requires iOS 18 or later. Offers in-app purchases.</p>
-              <p className="app-cta-note">
-                Photo suggestions help you explore; they do not replace a professional
-                identification.
-              </p>
-            </section>
+            <AppDownloadCard placement="article" />
           </div>
           <aside className="download-aside">
-            <img className="app-icon" src="/images/app-icon.jpg" alt="" width="64" height="64" />
-            <h2>A stone you can’t quite place?</h2>
-            <p>Explore possible matches with Rock Scan for iPhone.</p>
-            <Download placement="sidebar" badge />
-            <p className="small">
-              A photo suggestion is a starting point, not a laboratory identification.
-            </p>
+            <AppDownloadCard placement="sidebar" compact />
           </aside>
         </div>
       </article>

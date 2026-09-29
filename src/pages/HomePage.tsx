@@ -1,4 +1,5 @@
 import { Site } from '../components/Site';
+import { AppDownloadCard } from '../components/AppDownloadCard';
 import { Download } from '../components/Download';
 import { ArticleCard } from '../components/ArticleCard';
 import { articles } from '../features/articles/content';
@@ -19,7 +20,7 @@ export function HomePage() {
               with our iPhone app.
             </p>
             <div className="hero-actions">
-              <Download placement="hero" badge />
+              <Download placement="hero" />
               <a className="button secondary" href="#guides">
                 Explore the guides ↗
               </a>
@@ -50,20 +51,7 @@ export function HomePage() {
             ))}
           </div>
         </section>
-        <section className="home-app-callout">
-          <img
-            className="app-icon"
-            src="/images/app-icon.jpg"
-            alt="Rock Scan app icon"
-            width="64"
-            height="64"
-          />
-          <div>
-            <h2>Your next discovery starts with a photo.</h2>
-            <p>Explore possible matches for your stone in the iPhone app.</p>
-          </div>
-          <Download placement="footer" />
-        </section>
+        <AppDownloadCard placement="footer" />
         <p className="worksheet-link">
           <a href="/identification-checklist/">Get the free printable observation sheet ↗</a>
         </p>

@@ -8,7 +8,7 @@ export function AppPage() {
       <article className="section simple-page prose">
         <h1>{applicationName}</h1>
         <p className="intro">{applicationDescription}</p>
-        <Download placement="hero" badge />
+        <Download placement="hero" />
         <h2>What does Rock Scan do?</h2>
         <p>
           Take a photograph or choose one from your library to explore a possible stone identity.

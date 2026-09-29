@@ -24,7 +24,7 @@ export function Site({ children, noindex }: PageProps) {
           <a href="/app/">The app</a>
           <a href="/about/">About</a>
         </nav>
-        <Download placement="header" label="Get the app" />
+        <Download placement="header" />
       </header>
       <main id="main">{children}</main>
       <footer className="site-footer">
