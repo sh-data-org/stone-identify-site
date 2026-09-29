@@ -50,14 +50,6 @@ export function ArticlePage({ article }: { article: ArticleContent }) {
                 ))}
               </ul>
             </section>
-            <section className="article-download">
-              <h2>Take a closer look at your find</h2>
-              <p>
-                Use Rock Scan to explore possible matches from a photo. Compare the suggestion with
-                the clues in this guide.
-              </p>
-              <Download />
-            </section>
             <section className="related">
               <h2>Keep exploring</h2>
               {articles
@@ -68,6 +60,28 @@ export function ArticlePage({ article }: { article: ArticleContent }) {
                   </p>
                 ))}
               <a href="/identification-checklist/">Printable observation sheet</a>
+            </section>
+            <section className="article-download" aria-labelledby="article-download-title">
+              <img
+                className="app-icon"
+                src="/images/app-icon.jpg"
+                alt="Rock Scan app icon"
+                width="72"
+                height="72"
+                loading="lazy"
+              />
+              <p className="app-cta-label">ROCK SCAN FOR IPHONE</p>
+              <h2 id="article-download-title">Have a stone of your own?</h2>
+              <p>
+                Take a photo or choose one from your library. Explore possible matches in Rock Scan,
+                then compare the details with what you learned in this guide.
+              </p>
+              <Download label="Download Rock Scan on the App Store" />
+              <p className="app-cta-note">Requires iOS 18 or later. Offers in-app purchases.</p>
+              <p className="app-cta-note">
+                Photo suggestions help you explore; they do not replace a professional
+                identification.
+              </p>
             </section>
           </div>
           <aside className="download-aside">

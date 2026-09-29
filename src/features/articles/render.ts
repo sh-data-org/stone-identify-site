@@ -30,7 +30,7 @@ export function renderArticle(markdown: string) {
   renderer.image = ({ href, text }) => {
     const asset = assets.find((image) => image.path === href && image.reviewed);
     if (!asset) return '';
-    return `<figure class="inline-photo"><img src="${escape(asset.path)}" alt="${escape(text || asset.alt)}" width="960" height="640" loading="lazy"><figcaption>${escape(text || asset.alt)} · <a href="${escape(asset.sourceUrl)}">${escape(asset.credit)}</a> · ${escape(asset.license)} · <a href="/credits">License details</a></figcaption></figure>`;
+    return `<figure class="inline-photo"><img src="${escape(asset.path)}" alt="${escape(text || asset.alt)}" width="960" height="640" loading="lazy"><figcaption>${escape(text || asset.alt)} · <a href="${escape(asset.sourceUrl)}">${escape(asset.credit)}</a> · ${escape(asset.license)} · <a href="/credits/">License details</a></figcaption></figure>`;
   };
   const html = sanitizeHtml(marked.parse(markdown, { async: false, renderer }), {
     allowedTags: [

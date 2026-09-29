@@ -4,10 +4,11 @@ export function CreditsPage() {
   return (
     <Site>
       <section className="section simple-page">
-        <h1>Photo credits</h1>
+        <h1>Image credits</h1>
         <p>
-          Real specimens, photographed by their credited creators. Images are resized and may be
-          cropped in page layouts. Share-alike images retain their original license.
+          Specimen photographs credit their original creators. Educational illustrations are labeled
+          as AI-generated. Images are resized and may be cropped in page layouts. Share-alike images
+          retain their original license.
         </p>
         <div className="credit-grid">
           {assets.map((asset) => (

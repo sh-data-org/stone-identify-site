@@ -56,3 +56,36 @@
   border-radius: 0 10px 10px 0;
   line-height: 1.7;
 }
+
+.article-download {
+  margin-top: 40px;
+  padding: clamp(24px, 5vw, 44px);
+  border: 1px solid #cfddca;
+}
+.article-download .app-icon {
+  border-radius: 18px;
+}
+.article-download .app-cta-label {
+  margin: 20px 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+.article-download h2 {
+  margin-top: 0;
+  font-size: clamp(28px, 4vw, 38px);
+}
+.article-download .button {
+  margin: 10px 0;
+  max-width: 100%;
+  white-space: normal;
+  text-align: center;
+}
+.article-download .app-cta-note {
+  font-size: 12px;
+  color: var(--muted);
+}
+.prose .inline-photo img {
+  height: auto;
+  object-fit: contain;
+}

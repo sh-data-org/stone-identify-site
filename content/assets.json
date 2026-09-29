@@ -75,5 +75,27 @@
     "reviewed": true,
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/2006_T257%2C_modern_silver_ring_from_Carlton_Husthwaite%2C_North_Yorkshire_%28FindID_216406%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "description": "modern silver ring\nThe ring consists of a hoop of twisted silver wires bearing on the inside an English sterling hallmark. Wear makes it difficult to identify the mark precisely, but it indicates that the ring is not earlier than the late 19th/early 20th century.\n\nDisposition: not Treasure."
+  },
+  {
+    "path": "/images/quartz-calcite-surfaces.jpg",
+    "alt": "Illustrated quartz fracture and calcite cleavage",
+    "credit": "Stone Identifier · AI-generated educational illustration",
+    "license": "Illustration, not a specimen photograph",
+    "sourceUrl": "/credits/",
+    "licenseUrl": "",
+    "reviewed": true,
+    "originalUrl": "",
+    "description": "Schematic illustration created with GPT Image and checked against the article references."
+  },
+  {
+    "path": "/images/agate-banding-diagram.jpg",
+    "alt": "Illustrated agate cross-section and banding",
+    "credit": "Stone Identifier · AI-generated educational illustration",
+    "license": "Illustration, not a specimen photograph",
+    "sourceUrl": "/credits/",
+    "licenseUrl": "",
+    "reviewed": true,
+    "originalUrl": "",
+    "description": "Schematic illustration created with GPT Image and checked against the article references."
   }
 ]
