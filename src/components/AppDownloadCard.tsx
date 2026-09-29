@@ -19,8 +19,8 @@ export function AppDownloadCard({ placement, compact = false }: Props) {
         />
         <span>ROCK SCAN</span>
       </div>
-      <h2>{compact ? 'What did you find?' : 'Put a name to your find.'}</h2>
-      <p>Snap a photo. Explore possible matches.</p>
+      <h2>Identify your rocks</h2>
+      <p>Take a photo to find a match.</p>
       <Download placement={placement} />
       <p className="app-download-note">iOS 18+ · In-app purchases</p>
     </section>

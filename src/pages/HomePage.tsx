@@ -15,14 +15,11 @@ export function HomePage() {
               <br />
               in your hand.
             </h1>
-            <p>
-              Practical rock identification guides. Compare the clues, then explore possible matches
-              with our iPhone app.
-            </p>
+            <p>Identify your rocks with a photo. Get Rock Scan for iPhone.</p>
             <div className="hero-actions">
               <Download placement="hero" />
               <a className="button secondary" href="#guides">
-                Explore the guides ↗
+                Read the guides ↗
               </a>
             </div>
             <p className="store-name">Rock Scan: Jewelry Identifier on the App Store.</p>
