@@ -1,0 +1,79 @@
+[
+  {
+    "path": "/images/quartz.jpg",
+    "alt": "Quartz specimen photograph",
+    "credit": "Didier Descouens",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Quartz_Br%C3%A9sil.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Quartz_Br%C3%A9sil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "description": "Quartz \nLocation: Minas Gerais - Brasil\nSize : 18x15x13 cm"
+  },
+  {
+    "path": "/images/amethyst.jpg",
+    "alt": "Amethyst specimen photograph",
+    "credit": "Yoruno",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amethyst_2.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Amethyst_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "description": "Amethyst"
+  },
+  {
+    "path": "/images/obsidian.jpg",
+    "alt": "Obsidian specimen photograph",
+    "credit": "James St. John",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Obsidian_4.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Obsidian_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "description": "(~5.1 centimeters across at its widest)\n\nIgneous rocks form by the cooling &amp; crystallization of hot, molten rock (magma &amp; lava).  If this happens at or near the land surface, or on the seafloor, they are extrusive igneous rocks.  If this happens deep underground, they are intrusive igneous rocks.  Most igneous rocks have a crystalline texture, but some are clastic, vesicular, frothy, or glassy.\nObsidian is readily identifiable.  It is a glassy-textured, extrusive igneous rock.  Obsidian "
+  },
+  {
+    "path": "/images/calcite.jpg",
+    "alt": "Calcite specimen photograph",
+    "credit": "Nessa Eull",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Calcite_crystal_(GeoDIL_number_-_698).jpg",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Calcite_crystal_%28GeoDIL_number_-_698%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "description": "This relatively large calcite crystal is 9 cm in longest dimension. It has a “dog tooth spar” form, one of several common forms for calcite. This sample comes from an unknown location in Missouri."
+  },
+  {
+    "path": "/images/fluorite.jpg",
+    "alt": "Fluorite specimen photograph",
+    "credit": "Arenamontanus",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fluorite_crystal_specimen.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Fluorite_crystal_specimen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "description": "Fluorite crystal specimen"
+  },
+  {
+    "path": "/images/agate.jpg",
+    "alt": "Agate specimen photograph",
+    "credit": "Wikimedia Commons contributor; see original record",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Agate_banded_750pix.jpg",
+    "licenseUrl": "",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Agate_banded_750pix.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "description": ""
+  },
+  {
+    "path": "/images/jewelry.jpg",
+    "alt": "Jewelry specimen photograph",
+    "credit": "British Museum, Caroline Barton, 2009-07-07 16:23:42",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2006_T257,_modern_silver_ring_from_Carlton_Husthwaite,_North_Yorkshire_(FindID_216406).jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/2006_T257%2C_modern_silver_ring_from_Carlton_Husthwaite%2C_North_Yorkshire_%28FindID_216406%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "description": "modern silver ring\nThe ring consists of a hoop of twisted silver wires bearing on the inside an English sterling hallmark. Wear makes it difficult to identify the mark precisely, but it indicates that the ring is not earlier than the late 19th/early 20th century.\n\nDisposition: not Treasure."
+  }
+]

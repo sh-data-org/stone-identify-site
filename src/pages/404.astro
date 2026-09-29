@@ -1,0 +1,14 @@
+---
+import Site from '../layouts/Site.astro';
+Astro.response.status = 404;
+---
+
+<Site title="Page not found" noindex>
+  <section class="section">
+    <h1>This path ends here.</h1>
+    <p>Explore the guides to find your next discovery.</p>
+    <a class="button" href="/guides">
+      Back to the guides
+    </a>
+  </section>
+</Site>

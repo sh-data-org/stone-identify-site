@@ -1,0 +1,111 @@
+---
+import { env } from '../lib/site';
+import Download from '../components/Download.astro';
+import { jsonLd } from '../features/articles/render';
+import '../styles/site.css';
+import '../styles/public.css';
+interface Props {
+  title: string;
+  description?: string;
+  noindex?: boolean;
+  schema?: unknown;
+  image?: string;
+}
+const {
+  title,
+  description = 'Identify rocks, minerals and jewelry. Explore practical guides and take a closer look with Stone Identifier for iPhone.',
+  noindex = false,
+  schema,
+  image = '/images/quartz.jpg',
+} = Astro.props;
+const base = env.SITE_URL || Astro.url.origin;
+const canonical = new URL(Astro.url.pathname, base).href;
+---
+
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{title} | Stone Identifier</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
+    <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+    {(noindex || env.LAUNCH_READY !== 'true') && <meta name="robots" content="noindex,nofollow" />}
+    {env.GOOGLE_SITE_VERIFICATION && (
+      <meta name="google-site-verification" content={env.GOOGLE_SITE_VERIFICATION} />
+    )}
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL(image, base).href} />
+    <meta property="og:type" content={schema ? 'article' : 'website'} />
+    <meta name="twitter:card" content="summary_large_image" />
+    {schema && <script type="application/ld+json" set:html={jsonLd(schema)} />}
+  </head>
+  <body>
+    <a href="#main" class="skip-link">
+      Skip to content
+    </a>
+    <header class="site-header">
+      <a class="brand" href="/">
+        <img class="app-icon" src="/images/app-icon.jpg" alt="" width="36" height="36" />
+        Stone Identifier
+      </a>
+      <nav aria-label="Main navigation">
+        <a
+          href="/guides"
+          aria-current={Astro.url.pathname.startsWith('/guides') ? 'page' : undefined}
+        >
+          Guides
+        </a>
+        <a
+          href="/comparisons"
+          aria-current={Astro.url.pathname.startsWith('/comparisons') ? 'page' : undefined}
+        >
+          Compare
+        </a>
+        <a
+          href="/jewelry"
+          aria-current={Astro.url.pathname.startsWith('/jewelry') ? 'page' : undefined}
+        >
+          Jewelry
+        </a>
+        <a href="/about">About</a>
+      </nav>
+      <Download placement="header" label="Get the app" />
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div>
+        <a class="brand" href="/">
+          <img class="app-icon" src="/images/app-icon.jpg" alt="" width="36" height="36" />
+          Stone Identifier
+        </a>
+        <p>Practical guides to rocks, minerals and jewelry.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="/guides">Stone guides</a>
+        <a
+          href="/jewelry"
+          aria-current={Astro.url.pathname.startsWith('/jewelry') ? 'page' : undefined}
+        >
+          Jewelry guides
+        </a>
+        <a href="/apps">App comparisons</a>
+        <a href="/about">About</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+        <a href="/credits">Photo credits</a>
+      </nav>
+      <div class="footer-bottom">
+        © {new Date().getFullYear()} Stone Identifier <span>Keep your curiosity close.</span>
+      </div>
+    </footer>
+  </body>
+</html>

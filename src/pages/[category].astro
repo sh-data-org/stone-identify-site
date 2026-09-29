@@ -1,0 +1,36 @@
+---
+import Site from '../layouts/Site.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import { categories, categorySchema } from '../features/articles/schema';
+import { visibleArticles } from '../features/articles/public';
+export function getStaticPaths() {
+  return Object.keys(categories).map((category) => ({ params: { category } }));
+}
+const category = categorySchema.safeParse(Astro.params.category);
+if (!category.success) return Astro.redirect('/404');
+const name = categories[category.data];
+const articles = (visibleArticles()).filter((a) => a.content.category === category.data);
+const intros = {
+  guides: 'Start with what you can see. Build a better picture of the stone you found.',
+  comparisons: 'Similar at first glance. Different when you know what to look for.',
+  jewelry: 'Understand the marks, materials and details in the pieces you own.',
+  apps: 'Choose an identification tool with clear expectations about what it can do.',
+};
+---
+
+<Site title={name} description={intros[category.data]} noindex={articles.length === 0}>
+  <section class="section collection">
+    <span class="eyebrow">The field guide</span>
+    <h1>{name}</h1>
+    <p class="intro">{intros[category.data]}</p>
+    {articles.length ? (
+      <div class="article-grid">
+        {articles.map((a) => (
+          <ArticleCard content={a.content} headingLevel="h2" />
+        ))}
+      </div>
+    ) : (
+      <p>New guides are in preparation. Check back soon.</p>
+    )}
+  </section>
+</Site>
