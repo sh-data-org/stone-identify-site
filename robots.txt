@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://stoneidentify.app/sitemap.xml
