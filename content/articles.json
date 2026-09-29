@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "quartz-vs-calcite",
+    "category": "comparisons",
+    "title": "Quartz vs calcite: how to tell them apart",
+    "description": "Compare quartz and calcite using hardness, natural surfaces and photographs. Learn which clues help, which can mislead, and when to ask an expert.",
+    "image": {
+      "path": "/images/quartz.jpg",
+      "alt": "Quartz crystal cluster with visible natural faces"
+    },
+    "updated": "2026-09-29",
+    "sources": [
+      {
+        "title": "Minerals Education Coalition: quartz",
+        "url": "https://mineralseducationcoalition.org/minerals-database/quartz/"
+      },
+      {
+        "title": "Minerals Education Coalition: calcite",
+        "url": "https://mineralseducationcoalition.org/minerals-database/calcite/"
+      }
+    ],
+    "body": "## Quartz vs calcite at a glance\n\n| Property | Quartz | Calcite |\n| --- | --- | --- |\n| Composition | Silicon dioxide | Calcium carbonate |\n| Mohs hardness | 7 | 3 |\n| Appearance | May be clear, white or colored | May be clear, white or colored |\n| Surface clues | Can show curved, shell-like fracture surfaces | May show a pearly luster on cleavage surfaces |\n\nThe mineral references below describe typical properties. They do not tell you which mineral is in your hand. A worn pebble, polished ornament or mounted stone may hide the surfaces that would help an examiner.\n\n## Start with the surfaces already visible\n\nSet your specimen on a plain background and turn it slowly in daylight. Photograph the whole object, then any exposed natural face or existing broken edge. Write down whether each surface is smooth, curved, flat, rough or polished. Do not create a fresh break to get a better view.\n\nA flat face by itself does not settle the question. It might be a natural crystal face, a break or a surface created during cutting. Likewise, a shiny finish on a tumbled stone may tell you more about polishing than about the mineral.\n\n![Calcite crystal showing a different natural growth form](/images/calcite.jpg)\n\nThese are reference specimens, not a before-and-after test. Compare your object's visible structure with both photographs instead of choosing whichever has the closest color.\n\n## Why a scratch test is not the first step\n\nThe hardness gap is useful to someone carrying out a controlled identification. It is not a reason to scratch jewelry, a collectible crystal or an object whose value you do not know. A photo also cannot show whether an old line is a scratch, a crack or a mark left on the surface.\n\nFor a valuable or mounted piece, keep your observations and ask a qualified gemologist or mineral specialist. Say what you know about its history, and let the examiner choose an appropriate method.\n\n## Take photographs that support a useful comparison\n\nUse an evenly lit view without a strong color filter. Include another angle and a separate image with a ruler for scale. Keep the original photographs so you can compare suggestions against the actual object later.\n\nYou can use Rock Scan to explore possible matches from a photo. Treat a suggestion as a candidate to investigate, then check the supporting observations and alternatives. If the only evidence is that the stone is white or clear, leave the identification open.\n\n## Keep a record before deciding\n\nWrite “possible quartz” or “possible calcite” alongside the observations that led you there. Separate facts you can see from properties you have not measured. Our [printable observation sheet](/identification-checklist/) gives you a place to record both.\n\nIf your specimen shows distinct bands, explore our [agate identification guide](/guides/how-to-identify-agate/) as another starting point. A useful identification process can end with a better question rather than an immediate answer.",
+    "answer": "Quartz and calcite can both look clear, white or glassy. Their most useful reference difference is hardness: quartz is 7 on the Mohs scale, while calcite is 3. A photograph cannot measure that property, so start with observations rather than a confident name."
+  },
+  {
+    "slug": "how-to-identify-agate",
+    "category": "guides",
+    "title": "How to identify agate: clues to look for",
+    "description": "Look for banding, inspect exposed surfaces and photograph your find. Use this agate identification guide to compare clues without damaging your stone.",
+    "image": {
+      "path": "/images/agate.jpg",
+      "alt": "Banded agate with curved layers visible across its exposed face"
+    },
+    "updated": "2026-09-29",
+    "sources": [
+      {
+        "title": "Minnesota Department of Natural Resources: Lake Superior agate",
+        "url": "https://www.dnr.state.mn.us/education/geology/digging/agate.html"
+      }
+    ],
+    "body": "The Minnesota Department of Natural Resources describes this pattern in Lake Superior agates. Its regional examples are useful references, not a rule that every agate must look exactly the same.\n\n## Look at an exposed face, not only the outer surface\n\nExamine the surfaces you already have. If there is a natural opening, worn patch or previously cut face, photograph it alongside the whole specimen. Follow a visible band around the face: does it curve, close into a loop or disappear beneath the outer surface?\n\nKeep your description literal. “Three pale curved bands” is more useful than “definitely an agate.” If the pattern is hidden, write that down. An unclear view is missing evidence, not a reason to break the stone open.\n\n## Use the reference photo carefully\n\nThe banded specimen above has an exposed face that makes its pattern easy to inspect. Your uncut find may not offer the same view. Compare the shape and arrangement of the visible lines rather than expecting an exact color match.\n\nMake a short list of what matches and what does not. You might record a similar curved pattern but a different surface finish, or visible stripes that do not continue around the face. This keeps a promising resemblance from becoming an unsupported conclusion.\n\n## Photograph your find in three views\n\n1. Take one picture of the entire stone on a plain background.\n2. Take a close-up of the clearest pattern, keeping the camera steady.\n3. Take a second angle, plus a separate photograph with a ruler for scale.\n\nUse daylight or even indoor lighting. Keep filters off and retain an unedited copy. If reflections obscure the surface, change the camera angle before changing the specimen. Add a note about whether the surface is rough, worn, cut or polished.\n\n## Compare suggestions with your observations\n\nUse Rock Scan to explore possible matches, then return to the photographs and notes. Ask which visible features support the suggestion and which remain unexplained. An app can help you choose what to investigate next; it does not independently verify composition or origin.\n\nAvoid choosing an identity from color alone or treating a seller's label as a test result. If the pattern remains unclear, a local mineral club or qualified examiner can help you decide what additional evidence would be useful.\n\n## Keep the specimen and its history together\n\nRecord where the stone came from, if known, and whether it was found, bought or inherited. Keep that history separate from assumptions about where it formed. Use our [observation sheet](/identification-checklist/) to keep the notes with your photos.\n\nDo not scratch, heat, acid-test or break a valued piece just to complete a checklist. For a clear or white specimen without useful banding, our [quartz vs calcite comparison](/comparisons/quartz-vs-calcite/) explains why appearance needs to be considered alongside other properties.",
+    "answer": "Start by looking for a visible banding pattern on an exposed face. In fortification agates, bands can form nested outlines, rather like the walls of a fort. That pattern is a helpful starting clue, but a striped photograph alone does not confirm that a stone is agate."
+  }
+]
