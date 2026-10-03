@@ -97,5 +97,27 @@
     "reviewed": true,
     "originalUrl": "",
     "description": "Schematic illustration created with GPT Image and checked against the article references."
+  },
+  {
+    "path": "/images/amethyst-fluorite-shapes.jpg",
+    "alt": "Schematic amethyst and fluorite crystal shapes",
+    "credit": "Stone Identifier · AI-generated educational illustration",
+    "license": "Illustration, not a specimen photograph",
+    "sourceUrl": "/credits/",
+    "licenseUrl": "",
+    "reviewed": true,
+    "originalUrl": "",
+    "description": "GPT Image schematic reviewed against the primary references linked in the article."
+  },
+  {
+    "path": "/images/obsidian-onyx-materials.jpg",
+    "alt": "Schematic obsidian, onyx and onyx marble comparison",
+    "credit": "Stone Identifier · AI-generated educational illustration",
+    "license": "Illustration, not a specimen photograph",
+    "sourceUrl": "/credits/",
+    "licenseUrl": "",
+    "reviewed": true,
+    "originalUrl": "",
+    "description": "GPT Image schematic reviewed against the primary references linked in the article."
   }
 ]

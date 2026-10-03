@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { readFile, readdir, stat } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
 import { articles } from '../src/features/articles/content';
+import { routes } from '../src/routes';
 
 const root = resolve('dist');
 async function files(directory: string): Promise<string[]> {
@@ -15,7 +16,7 @@ async function files(directory: string): Promise<string[]> {
 }
 const artifacts = await files(root);
 const pages = artifacts.filter((file) => file.endsWith('.html'));
-assert.equal(pages.length, 14);
+assert.equal(pages.length, routes.length);
 const titles = new Set<string>();
 for (const file of artifacts) {
   assert(!/\/(admin|api|auth|preview|content)\//.test(file.slice(root.length)));
@@ -48,7 +49,8 @@ for (const file of pages) {
   }
 }
 const sitemap = await readFile(join(root, 'sitemap.xml'), 'utf8');
-assert.equal((sitemap.match(/<loc>/g) || []).length, 11);
+const indexableRoutes = routes.filter((route) => !route.noindex);
+assert.equal((sitemap.match(/<loc>/g) || []).length, indexableRoutes.length);
 assert(!/\/(admin|jewelry|apps|404)\/?</.test(sitemap));
 for (const article of articles) {
   const path = `/${article.category}/${article.slug}`;
@@ -77,5 +79,5 @@ for (const path of ['jewelry/index.html', 'apps/index.html', '404.html']) {
 }
 assert.equal((await readFile(join(root, 'CNAME'), 'utf8')).trim(), 'stoneidentify.app');
 console.log(
-  '14 static pages verified: app information, two sourced articles, eleven sitemap URLs, metadata, anchors, local links, app attribution and frontend-only output.',
+  `${pages.length} static pages verified: ${articles.length} sourced articles, ${indexableRoutes.length} sitemap URLs, metadata, anchors, local links, app attribution and frontend-only output.`,
 );
