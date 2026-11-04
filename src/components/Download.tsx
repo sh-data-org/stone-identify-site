@@ -1,4 +1,4 @@
-import { appStoreUrl, type appPlacements } from '../features/analytics/acquisition';
+import { appStoreUrl, googlePlayUrl, type appPlacements } from '../features/analytics/acquisition';
 
 type Props = {
   placement?: (typeof appPlacements)[number];
@@ -6,8 +6,24 @@ type Props = {
 
 export function Download({ placement = 'article' }: Props) {
   return (
-    <a className="store-badge download-button" href={appStoreUrl()} data-app-placement={placement}>
-      <img src="/app-store-badge.svg" alt="Download on the App Store" width="180" height="60" />
-    </a>
+    <div className="download-options">
+      <a
+        className="button download-button"
+        href="/go/"
+        data-smart-download
+        data-app-placement={placement}
+      >
+        Download app ↗
+      </a>
+      <div className="download-stores" aria-label="Choose your app store">
+        <a href={appStoreUrl()} data-app-placement={placement}>
+          App Store
+        </a>
+        <span aria-hidden="true"> · </span>
+        <a href={googlePlayUrl()} data-app-placement={placement}>
+          Google Play
+        </a>
+      </div>
+    </div>
   );
 }

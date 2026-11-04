@@ -3,12 +3,17 @@ import { AppDownloadCard } from '../components/AppDownloadCard';
 import { renderArticle } from '../features/articles/render';
 import { categories, type ArticleContent } from '../features/articles/schema';
 import { articles } from '../features/articles/content';
+import { relatedArticles } from '../features/articles/related';
 
 export function ArticlePage({ article }: { article: ArticleContent }) {
   const { html, headings } = renderArticle(article.body);
   return (
     <Site>
-      <article className="article-page">
+      <article
+        className="article-page"
+        data-article-id={article.id}
+        data-article-cluster={article.cluster}
+      >
         <nav className="breadcrumbs" aria-label="Breadcrumb">
           <a href="/">Home</a> /{' '}
           <a href={`/${article.category}/`}>{categories[article.category]}</a>
@@ -17,7 +22,14 @@ export function ArticlePage({ article }: { article: ArticleContent }) {
           <h1>{article.title}</h1>
           <p className="intro">{article.answer}</p>
           <p className="byline">
-            <a href="/about/">Stone Identifier editorial team</a> · Updated {article.updated}
+            <a href="/about/">Stone Identifier editorial team</a> · Published{' '}
+            <time dateTime={article.published}>{article.published}</time>
+            {article.updated !== article.published && (
+              <>
+                {' '}
+                · Updated <time dateTime={article.updated}>{article.updated}</time>
+              </>
+            )}
           </p>
         </header>
         <div className="reading-layout">
@@ -51,13 +63,11 @@ export function ArticlePage({ article }: { article: ArticleContent }) {
             </section>
             <section className="related">
               <h2>Keep exploring</h2>
-              {articles
-                .filter((item) => item.slug !== article.slug)
-                .map((item) => (
-                  <p key={item.slug}>
-                    <a href={`/${item.category}/${item.slug}/`}>{item.title}</a>
-                  </p>
-                ))}
+              {relatedArticles(article, articles).map((item) => (
+                <p key={item.id}>
+                  <a href={`/${item.category}/${item.slug}/`}>{item.title}</a>
+                </p>
+              ))}
               <a href="/identification-checklist/">Printable observation sheet</a>
             </section>
             <AppDownloadCard placement="article" />

@@ -20,9 +20,9 @@ export function AppDownloadCard({ placement, compact = false }: Props) {
         <span>ROCK SCAN</span>
       </div>
       <h2>Identify your rocks</h2>
-      <p>Take a photo to find a match.</p>
+      <p>Take a photo to explore a possible match.</p>
       <Download placement={placement} />
-      <p className="app-download-note">iOS 18+ · In-app purchases</p>
+      <p className="app-download-note">iPhone and Android · In-app purchases</p>
     </section>
   );
 }

@@ -1,6 +1,13 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { acquisition, appClickPlacement, appStoreUrl } from '../src/features/analytics/acquisition';
+import {
+  acquisition,
+  appClickPlacement,
+  appStoreUrl,
+  appPlatform,
+  googlePlayUrl,
+  deviceStoreUrl,
+} from '../src/features/analytics/acquisition';
 import { analyticsReferrer, googleMeasurementId } from '../src/features/analytics/google';
 
 test('App Store buttons carry the verified shared website campaign', () => {
@@ -14,16 +21,10 @@ test('App Store buttons carry the verified shared website campaign', () => {
 });
 
 test('only our App Store destinations are counted', () => {
-  assert.equal(appClickPlacement(new URL(appStoreUrl()), acquisition.siteUrl, 'hero'), 'hero');
-  assert.equal(
-    appClickPlacement(new URL('https://apps.apple.com/app/id123'), acquisition.siteUrl),
-    null,
-  );
-  assert.equal(appClickPlacement(new URL('https://example.com/go'), acquisition.siteUrl), null);
-  assert.equal(
-    appClickPlacement(new URL(appStoreUrl()), acquisition.siteUrl, 'arbitrary'),
-    'article',
-  );
+  assert.equal(appClickPlacement(new URL(appStoreUrl()), 'hero'), 'hero');
+  assert.equal(appClickPlacement(new URL('https://apps.apple.com/app/id123')), null);
+  assert.equal(appClickPlacement(new URL('https://example.com/go')), null);
+  assert.equal(appClickPlacement(new URL(appStoreUrl()), 'arbitrary'), 'article');
 });
 
 test('analytics excludes preview origins, admins and disabled launches', () => {
@@ -51,4 +52,35 @@ test('private referrer paths and parameters are not sent', () => {
     'https://example.com',
   );
   assert.equal(analyticsReferrer(''), '');
+});
+
+test('Google Play referrer preserves the shared campaign and counts only our Android listing', () => {
+  const url = new URL(googlePlayUrl());
+  assert.equal(url.searchParams.get('id'), 'com.stocker.stoneidentify');
+  const referrer = new URLSearchParams(url.searchParams.get('referrer') ?? '');
+  assert.equal(referrer.get('utm_campaign'), 'stone-web');
+  assert.equal(referrer.get('utm_source'), 'stoneidentify.app');
+  assert.equal(appPlatform(url), 'android');
+  assert.equal(appClickPlacement(url, 'sidebar'), 'sidebar');
+  url.searchParams.set('id', 'another.app');
+  assert.equal(appPlatform(url), null);
+  assert.equal(
+    appPlatform(
+      new URL('https://play.google.com.evil.test/store/apps/details?id=com.stocker.stoneidentify'),
+    ),
+    null,
+  );
+  assert.equal(appClickPlacement(new URL('https://stoneidentify.app/go/')), null);
+});
+
+test('shared download link routes phones and iPadOS while leaving desktops a choice', () => {
+  assert.equal(
+    deviceStoreUrl('Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X)'),
+    appStoreUrl(),
+  );
+  assert.equal(deviceStoreUrl('Mozilla/5.0 (Linux; Android 15; Pixel 9)'), googlePlayUrl());
+  assert.equal(deviceStoreUrl('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15)', 5), appStoreUrl());
+  assert.equal(deviceStoreUrl('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15)', 0), null);
+  assert.equal(deviceStoreUrl('Mozilla/5.0 (Windows NT 10.0)'), null);
+  assert.equal(deviceStoreUrl(''), null);
 });

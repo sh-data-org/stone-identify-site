@@ -15,14 +15,14 @@ export function HomePage() {
               <br />
               in your hand.
             </h1>
-            <p>Identify your rocks with a photo. Get Rock Scan for iPhone.</p>
+            <p>Identify your rocks with a photo. Available for iPhone and Android.</p>
             <div className="hero-actions">
               <Download placement="hero" />
               <a className="button secondary" href="#guides">
                 Read the guides ↗
               </a>
             </div>
-            <p className="store-name">Rock Scan: Jewelry Identifier on the App Store.</p>
+            <p className="store-name">Find us on the App Store and Google Play.</p>
           </div>
           <figure className="specimen-feature">
             <img

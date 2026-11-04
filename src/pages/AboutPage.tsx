@@ -13,8 +13,8 @@ export function AboutPage() {
         <div className="prose">
           <p>
             Stone Identifier helps curious people explore rocks, minerals and jewelry through
-            practical guides and a photo identification app for iPhone. The app is listed in the App
-            Store as <strong>Rock Scan: Jewelry Identifier</strong>, published by Yoav Tzori.
+            practical guides and photo identification apps for iPhone and Android. The iOS app is
+            published by Yoav Tzori; the Android app is published by Stocker Group.
           </p>
           <h2>How we make our guides</h2>
           <p>
@@ -30,8 +30,8 @@ export function AboutPage() {
           </p>
           <h2>About the app</h2>
           <p>
-            <a href="/app/">Rock Scan: Jewelry Identifier</a> is our photo identification app. See
-            its features, supported platform and App Store link.
+            <a href="/app/">Explore our photo identification apps</a>, their store listings and
+            supported platforms.
           </p>
           <h2>Explore your own find</h2>
           <p>

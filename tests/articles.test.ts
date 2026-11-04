@@ -2,6 +2,54 @@ import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { renderArticle, jsonLd } from '../src/features/articles/render';
 import { articles } from '../src/features/articles/content';
+import assets from '../content/assets.json';
+import { validateArticles } from '../src/features/articles/validate';
+import { relatedArticles } from '../src/features/articles/related';
+
+test('publication rejects duplicate identity, intent, metadata and URLs', () => {
+  const [first, second] = articles;
+  assert(first && second);
+  for (const field of ['id', 'title', 'description', 'targetKeyword'] as const) {
+    assert.throws(() => validateArticles([first, { ...second, [field]: first[field] }], assets));
+  }
+  assert.throws(() =>
+    validateArticles([first, { ...second, category: first.category, slug: first.slug }], assets),
+  );
+});
+
+test('publication rejects private draft fields, invalid dates and uncredited images', () => {
+  const first = articles[0];
+  assert(first);
+  for (const change of [
+    { published: '2026-02-30' },
+    { published: '2027-01-01' },
+    { research: { volume: 100 } },
+    { image: { path: '/images/../private.png', alt: 'Invalid path' } },
+  ])
+    assert.throws(() => validateArticles([{ ...first, ...change }], assets));
+  assert.throws(() => validateArticles([first], []));
+  assert.throws(() =>
+    validateArticles(
+      [first],
+      assets.map((asset) => ({ ...asset, reviewed: false })),
+    ),
+  );
+});
+
+test('related links prioritize the cluster, exclude self and remain bounded', () => {
+  const first = articles[0];
+  assert(first);
+  const candidates = Array.from({ length: 7 }, (_, index) => ({
+    ...first,
+    id: `candidate-${index}`,
+    slug: `candidate-${index}`,
+    cluster: index === 6 ? first.cluster : 'other',
+  }));
+  const related = relatedArticles(first, [first, ...candidates]);
+  assert.equal(related.length, 4);
+  assert.equal(related[0]?.id, 'candidate-6');
+  assert(!related.some((article) => article.id === first.id));
+});
 
 test('article rendering strips executable HTML and unknown images', () => {
   const { html } = renderArticle(

@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import { AppPage } from './pages/AppPage';
+import { DownloadPage } from './pages/DownloadPage';
 import {
   applicationSchema,
   applicationName,
@@ -27,10 +28,18 @@ export interface Route {
   element: ReactNode;
   noindex?: boolean;
   image?: string;
+  modified?: string;
   schema?: StructuredData;
 }
 
 const pages: Route[] = [
+  {
+    path: '/go',
+    title: 'Download Stone Identifier for iPhone or Android',
+    description: 'Open the App Store or Google Play to download our stone identification app.',
+    element: <DownloadPage />,
+    noindex: true,
+  },
   {
     path: '/app',
     title: applicationName,
@@ -43,7 +52,7 @@ const pages: Route[] = [
     path: '/',
     title: 'Rock identification guides and app',
     description:
-      'Learn to identify rocks and minerals with practical guides, compare similar stones, and explore possible matches with Rock Scan for iPhone.',
+      'Learn to identify rocks and minerals with practical guides, compare similar stones, and explore possible matches with our apps for iPhone and Android.',
     element: <HomePage />,
   },
   {
@@ -64,21 +73,21 @@ const pages: Route[] = [
     path: '/about',
     title: 'About Stone Identifier',
     description:
-      'Learn about Stone Identifier, our educational rock and mineral guides, and Rock Scan: Jewelry Identifier for iPhone.',
+      'Learn about Stone Identifier, our educational rock and mineral guides, and our iPhone and Android apps.',
     element: <AboutPage />,
   },
   {
     path: '/privacy',
     title: 'Website privacy',
     description:
-      'How Stone Identifier handles website visits, optional Google Analytics cookies and App Store campaign links.',
+      'How Stone Identifier handles website visits, optional Google Analytics cookies and app store campaign links.',
     element: <PrivacyPage />,
   },
   {
     path: '/terms',
     title: 'Website terms',
     description:
-      'Read the terms for Stone Identifier educational guides, photographs and links to the Rock Scan iPhone app.',
+      'Read the terms for Stone Identifier educational guides, photographs and links to the iPhone and Android apps.',
     element: <TermsPage />,
   },
   {
@@ -100,11 +109,14 @@ const pages: Route[] = [
     title: article.title,
     description: article.description,
     image: article.image.path,
+    modified: article.updated,
     element: <ArticlePage article={article} />,
     schema: {
       '@type': 'Article',
       headline: article.title,
       description: article.description,
+      identifier: article.id,
+      datePublished: article.published,
       dateModified: article.updated,
       publisher: { '@id': publisherId },
       isPartOf: { '@id': websiteId },
