@@ -1,5 +1,6 @@
 import { analyticsReferrer } from './google';
 import { acquisition, appClickPlacement, appPlatform } from './acquisition';
+import { downloadArticleContext, downloadContextKey } from './article-context';
 declare global {
   interface Window {
     dataLayer: unknown[];
@@ -64,7 +65,14 @@ export function setupGoogleAnalytics(container: HTMLElement) {
         status.textContent = 'Your browser could not save this preference for your next visit.';
     }
     if (allowed) start();
-    else if (started) {
+    else {
+      try {
+        sessionStorage.removeItem(downloadContextKey);
+      } catch {
+        if (status) status.textContent = 'Your browser could not clear saved article context.';
+      }
+    }
+    if (!allowed && started) {
       gtag('consent', 'update', { analytics_storage: 'denied' });
       // A reload removes the loaded tag as well as our event listeners after withdrawal.
       if (persisted) location.reload();
@@ -86,10 +94,41 @@ export function setupGoogleAnalytics(container: HTMLElement) {
     const link = event.target.closest<HTMLAnchorElement>('a[href]');
     if (!link) return;
     const destination = new URL(link.href);
+    if (destination.origin === location.origin && destination.pathname === '/go/') {
+      try {
+        // Only retain public article metadata after consent and an explicit chooser click.
+        if (articleContext.article_id && articleContext.article_cluster) {
+          sessionStorage.setItem(
+            downloadContextKey,
+            JSON.stringify({
+              ...articleContext,
+              source_page_path: location.pathname,
+              createdAt: Date.now(),
+            }),
+          );
+        } else sessionStorage.removeItem(downloadContextKey);
+      } catch {
+        if (status) status.textContent = 'Your browser could not preserve article attribution.';
+      }
+      return;
+    }
     const placement = appClickPlacement(destination, link.dataset.appPlacement);
     if (!placement) return;
+    let sourceContext = null;
+    if (location.pathname === '/go/') {
+      try {
+        sourceContext = downloadArticleContext(
+          sessionStorage.getItem(downloadContextKey),
+          new URL(location.href),
+          document.referrer,
+        );
+      } catch {
+        if (status) status.textContent = 'Your browser could not read article attribution.';
+      }
+    }
     gtag('event', 'app_store_click', {
       ...articleContext,
+      ...sourceContext,
       page_path: location.pathname,
       button_placement: placement,
       app_campaign: acquisition.campaign,
