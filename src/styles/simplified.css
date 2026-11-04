@@ -60,6 +60,26 @@
   gap: 8px;
   flex-shrink: 0;
 }
+.button.download-button {
+  min-height: 52px;
+  padding: 16px 26px;
+  border: 2px solid #d6f36b;
+  background: #d6f36b;
+  color: #142b25;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 4px 14px #071e2426;
+}
+.button.download-button:hover {
+  border-color: #e5ff8b;
+  background: #e5ff8b;
+  color: #142b25;
+  box-shadow: 0 6px 18px #071e2440;
+}
+.button.download-button:focus-visible {
+  outline: 3px solid #438cff;
+  outline-offset: 4px;
+}
 .download-stores {
   font-size: 12px;
   line-height: 1.5;

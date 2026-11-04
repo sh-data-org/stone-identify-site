@@ -13,7 +13,7 @@ export function Download({ placement = 'article' }: Props) {
         data-smart-download
         data-app-placement={placement}
       >
-        Get the app ↗
+        Download app ↗
       </a>
       <div className="download-stores" aria-label="Choose your app store">
         <a href={appStoreUrl()} data-app-placement={placement}>
