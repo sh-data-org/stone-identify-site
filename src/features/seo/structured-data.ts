@@ -5,7 +5,7 @@ const siteUrl = `${acquisition.siteUrl}/`;
 export const publisherId = `${siteUrl}#publisher`;
 export const websiteId = `${siteUrl}#website`;
 export const applicationId = `${siteUrl}app/#application`;
-export const applicationName = 'Rock Scan: Jewelry Identifier';
+export const applicationName = 'Rock Identifier & Stone Scan';
 export const applicationDescription =
   'A photo identification app for exploring possible matches for rocks, crystals, minerals and gemstones. Published by Yoav Tzori for educational use.';
 
@@ -22,6 +22,17 @@ export const applicationSchema: StructuredData = {
   sameAs: `https://apps.apple.com/us/app/id${acquisition.appId}`,
   image: `${siteUrl}images/app-icon.jpg`,
   author: { '@id': publisherId },
+};
+
+const androidApplicationSchema: StructuredData = {
+  '@type': 'MobileApplication',
+  '@id': `${siteUrl}app/#android-application`,
+  name: 'Crystal & Stone Identifier',
+  applicationCategory: 'EducationalApplication',
+  operatingSystem: 'Android',
+  url: `${siteUrl}app/`,
+  installUrl: `https://play.google.com/store/apps/details?id=${acquisition.androidPackage}`,
+  author: { '@type': 'Organization', name: 'Stocker Group' },
 };
 
 export function pageStructuredData(page: {
@@ -56,6 +67,7 @@ export function pageStructuredData(page: {
         mainEntity,
       },
       ...(page.schema ? [{ ...page.schema, '@id': mainEntity?.['@id'] }] : []),
+      ...(page.path === '/app/' ? [androidApplicationSchema] : []),
     ],
   };
 }

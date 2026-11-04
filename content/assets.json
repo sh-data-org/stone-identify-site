@@ -119,5 +119,49 @@
     "reviewed": true,
     "originalUrl": "",
     "description": "GPT Image schematic reviewed against the primary references linked in the article."
+  },
+  {
+    "path": "/images/conglomerate.jpg",
+    "alt": "Rounded quartz pebbles in Berne Conglomerate from Ohio",
+    "credit": "James St. John",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Quartz-pebble_conglomerate_(Berne_Conglomerate,_Lower_Mississippian;_Newark,_Ohio,_USA)_1_(30080019695).jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "reviewed": true,
+    "originalUrl": "https://commons.wikimedia.org/wiki/File:Quartz-pebble_conglomerate_(Berne_Conglomerate,_Lower_Mississippian;_Newark,_Ohio,_USA)_1_(30080019695).jpg",
+    "description": "Wikimedia thumbnail resized by Wikimedia; no crop or specimen alteration."
+  },
+  {
+    "path": "/images/pumice.jpg",
+    "alt": "Pale pumice specimen with a frothy texture and many small cavities",
+    "credit": "James St. John",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pumice_1.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "reviewed": true,
+    "originalUrl": "https://commons.wikimedia.org/wiki/File:Pumice_1.jpg",
+    "description": "Original photograph; no changes."
+  },
+  {
+    "path": "/images/green-fluorite.jpg",
+    "alt": "The same green fluorite crystal photographed in normal light on the left and UV light on the right",
+    "credit": "GorissM",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Green_Fluorite_Crystal_(16396963054).jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "reviewed": true,
+    "originalUrl": "https://commons.wikimedia.org/wiki/File:Green_Fluorite_Crystal_(16396963054).jpg",
+    "description": "Wikimedia thumbnail resized by Wikimedia; the paired original photographs are uncropped."
+  },
+  {
+    "path": "/images/shale.jpg",
+    "alt": "Dark fine-grained Sunbury Shale specimen from southern Ohio",
+    "credit": "James St. John",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_shale_(Sunbury_Shale,_Lower_Mississippian;_Tener_Mountain_roadcut,_southern_Ohio,_USA)_17.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "reviewed": true,
+    "originalUrl": "https://commons.wikimedia.org/wiki/File:Black_shale_(Sunbury_Shale,_Lower_Mississippian;_Tener_Mountain_roadcut,_southern_Ohio,_USA)_17.jpg",
+    "description": "Wikimedia thumbnail resized by Wikimedia; no crop or specimen alteration."
   }
 ]

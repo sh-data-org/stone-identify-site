@@ -1,5 +1,5 @@
 import { analyticsReferrer } from './google';
-import { acquisition, appClickPlacement } from './acquisition';
+import { acquisition, appClickPlacement, appPlatform } from './acquisition';
 declare global {
   interface Window {
     dataLayer: unknown[];
@@ -14,6 +14,10 @@ export function setupGoogleAnalytics(container: HTMLElement) {
   const measurementId = container.dataset.measurementId;
   const panel = container.querySelector<HTMLElement>('[data-analytics-panel]');
   const status = container.querySelector<HTMLElement>('[role="status"]');
+  const article = document.querySelector<HTMLElement>('article[data-article-id]');
+  const articleContext = article
+    ? { article_id: article.dataset.articleId, article_cluster: article.dataset.articleCluster }
+    : {};
   if (!measurementId || !panel) return;
   let allowed = false;
   let started = false;
@@ -34,6 +38,7 @@ export function setupGoogleAnalytics(container: HTMLElement) {
     });
     gtag('js', new Date());
     gtag('config', measurementId, {
+      ...articleContext,
       page_location: location.origin + location.pathname,
       page_referrer: analyticsReferrer(document.referrer),
       allow_google_signals: false,
@@ -81,12 +86,14 @@ export function setupGoogleAnalytics(container: HTMLElement) {
     const link = event.target.closest<HTMLAnchorElement>('a[href]');
     if (!link) return;
     const destination = new URL(link.href);
-    const placement = appClickPlacement(destination, location.origin, link.dataset.appPlacement);
+    const placement = appClickPlacement(destination, link.dataset.appPlacement);
     if (!placement) return;
     gtag('event', 'app_store_click', {
+      ...articleContext,
       page_path: location.pathname,
       button_placement: placement,
       app_campaign: acquisition.campaign,
+      app_platform: appPlatform(destination),
       transport_type: 'beacon',
     });
   });

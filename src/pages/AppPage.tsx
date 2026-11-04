@@ -17,19 +17,19 @@ export function AppPage() {
         </p>
         <h2>Is Stone Identifier the same as Rock Scan?</h2>
         <p>
-          Stone Identifier is this website. Our app is listed on the App Store as Rock Scan: Jewelry
-          Identifier and is also described as Stone Identify. The publisher is Yoav Tzori. Use the
-          App Store links on this site to find the correct app.
+          Stone Identifier is this website. On the App Store, find Rock Identifier &amp; Stone Scan
+          by Yoav Tzori. On Google Play, find Crystal &amp; Stone Identifier by Stocker Group. Use
+          the links on this page to find the correct app for your device.
         </p>
         <h2>Which devices can use the app?</h2>
         <p>
-          The app is available through Apple’s App Store and requires iOS 18.0 or later. Check the
-          listing for current device compatibility.
+          The iOS app requires iOS 18.0 or later. An Android version is available on Google Play.
+          Check each store listing for current compatibility and features.
         </p>
         <h2>Does it have a subscription?</h2>
         <p>
           The app offers an optional Pro subscription. Features vary by subscription status. Check
-          the App Store and the in-app purchase screen for current plans, prices and terms.
+          your store listing and the in-app purchase screen for current plans, prices and terms.
         </p>
         <h2>Can a photo confirm a gemstone’s identity or value?</h2>
         <p>
@@ -45,8 +45,8 @@ export function AppPage() {
           match.
         </p>
         <p>
-          App information checked against the official App Store listing on September 29, 2026. Read
-          the app’s <a href="https://identifier-privacy-policy.sh-data.site/">privacy policy</a> and{' '}
+          Store listings checked on November 4, 2026. Read the app’s{' '}
+          <a href="https://identifier-privacy-policy.sh-data.site/">privacy policy</a> and{' '}
           <a href="https://identifier-terms-of-service.sh-data.site/">terms of service</a>.
         </p>
         <Download placement="footer" />

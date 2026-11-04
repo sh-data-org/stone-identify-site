@@ -30,6 +30,10 @@ for (const file of pages) {
   assert(!html.includes('localhost') && !html.includes('<!--page-'), file);
   assert.match(html, /https:\/\/apps\.apple\.com\/us\/app\/id6782013876/);
   assert.match(html, /pt=125042532(?:&amp;|&)ct=stone-web/);
+  assert.match(
+    html,
+    /https:\/\/play\.google\.com\/store\/apps\/details\?id=com\.stocker\.stoneidentify/,
+  );
   const title = html.match(/<title>(.*?)<\/title>/)?.[1];
   assert(title);
   if (!html.includes('noindex')) {
@@ -51,7 +55,7 @@ for (const file of pages) {
 const sitemap = await readFile(join(root, 'sitemap.xml'), 'utf8');
 const indexableRoutes = routes.filter((route) => !route.noindex);
 assert.equal((sitemap.match(/<loc>/g) || []).length, indexableRoutes.length);
-assert(!/\/(admin|jewelry|apps|404)\/?</.test(sitemap));
+assert(!/\/(admin|jewelry|apps|go|404)\/?</.test(sitemap));
 for (const article of articles) {
   const path = `/${article.category}/${article.slug}`;
   const html = await readFile(join(root, path, 'index.html'), 'utf8');
@@ -69,12 +73,22 @@ for (const article of articles) {
   );
   assert(articleNode && typeof articleNode === 'object' && 'headline' in articleNode);
   assert.equal(articleNode.headline, article.title);
+  assert('identifier' in articleNode && articleNode.identifier === article.id);
+  assert('datePublished' in articleNode && articleNode.datePublished === article.published);
+  assert('dateModified' in articleNode && articleNode.dateModified === article.updated);
+  assert(html.includes(`data-article-id="${article.id}"`));
+  assert(html.includes(`data-article-cluster="${article.cluster}"`));
+  assert(
+    sitemap.includes(
+      `<loc>https://stoneidentify.app${path}/</loc><lastmod>${article.updated}</lastmod>`,
+    ),
+  );
   assert(html.includes(article.answer.replaceAll('&', '&amp;')));
 }
 const homepage = await readFile(join(root, 'index.html'), 'utf8');
 assert.match(homepage, /data-measurement-id="G-W5JET4YGQH"/);
 assert.match(homepage, /data-app-placement="hero"/);
-for (const path of ['jewelry/index.html', 'apps/index.html', '404.html']) {
+for (const path of ['jewelry/index.html', 'apps/index.html', 'go/index.html', '404.html']) {
   assert.match(await readFile(join(root, path), 'utf8'), /noindex,follow/);
 }
 assert.equal((await readFile(join(root, 'CNAME'), 'utf8')).trim(), 'stoneidentify.app');

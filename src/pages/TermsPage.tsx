@@ -22,7 +22,7 @@ export function TermsPage() {
         </p>
         <h2>The app</h2>
         <p>
-          Downloads, purchases and subscriptions are governed by the applicable App Store terms and
+          Downloads, purchases and subscriptions are governed by the applicable app store terms and
           the app’s <a href="https://identifier-terms-of-service.sh-data.site/">terms of service</a>
           . See the current listing and in-app purchase screen for available plans and prices.
         </p>

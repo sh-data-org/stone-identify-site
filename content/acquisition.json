@@ -3,5 +3,6 @@
   "appId": "6782013876",
   "campaign": "stone-web",
   "providerToken": "125042532",
-  "measurementId": "G-W5JET4YGQH"
+  "measurementId": "G-W5JET4YGQH",
+  "androidPackage": "com.stocker.stoneidentify"
 }

@@ -51,7 +51,10 @@ for (const route of routes) {
 }
 const locations = routes
   .filter((route) => !route.noindex)
-  .map((route) => `<url><loc>${new URL(route.path, acquisition.siteUrl).href}</loc></url>`);
+  .map((route) => {
+    const modified = route.modified ? `<lastmod>${route.modified}</lastmod>` : '';
+    return `<url><loc>${new URL(route.path, acquisition.siteUrl).href}</loc>${modified}</url>`;
+  });
 await writeFile(
   'dist/sitemap.xml',
   `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${locations.join('')}</urlset>`,

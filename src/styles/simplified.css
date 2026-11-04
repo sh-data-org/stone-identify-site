@@ -53,30 +53,25 @@
   object-fit: contain;
 }
 
-.store-badge.download-button {
+.download-options {
   display: inline-flex;
-  width: 180px;
-  max-width: 100%;
-  border-radius: 10px;
-  transition:
-    transform 160ms,
-    box-shadow 160ms;
-}
-.store-badge.download-button img {
-  width: 100%;
-  height: auto;
-}
-.store-badge.download-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px #0003;
-}
-.store-badge.download-button:focus-visible {
-  outline: 3px solid #438cff;
-  outline-offset: 5px;
-}
-.site-header .store-badge.download-button {
-  width: 135px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
   flex-shrink: 0;
+}
+.download-stores {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.download-stores a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.site-header .download-button {
+  padding: 12px 18px;
+  white-space: nowrap;
 }
 .app-download-card {
   position: relative;
@@ -150,17 +145,4 @@
 }
 .app-download-card--compact p {
   font-size: 14px;
-}
-@media (max-width: 760px) {
-  .site-header .store-badge.download-button {
-    width: 120px;
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .store-badge.download-button {
-    transition: none;
-  }
-  .store-badge.download-button:hover {
-    transform: none;
-  }
 }
