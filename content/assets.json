@@ -163,5 +163,27 @@
     "reviewed": true,
     "originalUrl": "https://commons.wikimedia.org/wiki/File:Black_shale_(Sunbury_Shale,_Lower_Mississippian;_Tener_Mountain_roadcut,_southern_Ohio,_USA)_17.jpg",
     "description": "Wikimedia thumbnail resized by Wikimedia; no crop or specimen alteration."
+  },
+  {
+    "path": "/images/smoky-quartz.jpg",
+    "alt": "Rough smoky quartz specimen with gray-brown, glassy broken surfaces",
+    "credit": "James St. John",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Smoky_quartz_11.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Smoky_quartz_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "description": "Rough smoky quartz with irregular, reflective broken surfaces; no intact pointed termination shown."
+  },
+  {
+    "path": "/images/slate.jpg",
+    "alt": "Dark gray Bangor slate specimen with broad, flat surfaces",
+    "credit": "Dexter Perkins",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray_slate_(GeoDIL_number_-_15).jpg",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Gray_slate_%28GeoDIL_number_-_15%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "description": "Dark gray Bangor slate from Northampton County, Pennsylvania; broad planar surfaces visible."
   }
 ]
