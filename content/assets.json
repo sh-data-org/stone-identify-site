@@ -185,5 +185,27 @@
     "reviewed": true,
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Gray_slate_%28GeoDIL_number_-_15%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "description": "Dark gray Bangor slate from Northampton County, Pennsylvania; broad planar surfaces visible."
+  },
+  {
+    "path": "/images/marble-adirondacks.jpg",
+    "alt": "Pale granular marble specimen from the Adirondack lowlands of New York, with painted collection number 173",
+    "credit": "Nessa Eull",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marble_(GeoDIL_number_-_506).jpg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/58/Marble_%28GeoDIL_number_-_506%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "description": "Original GeoDIL specimen photograph, visually reviewed against its collection record; no changes."
+  },
+  {
+    "path": "/images/marble-calcite-dolomite.jpg",
+    "alt": "Gray and pale granular marble specimen from Lucerne Valley, California, with painted collection number 177",
+    "credit": "Nessa Eull",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marble_(GeoDIL_number_-_510).jpg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Marble_%28GeoDIL_number_-_510%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "description": "Original GeoDIL specimen photograph, visually reviewed against its collection record; no changes."
   }
 ]
