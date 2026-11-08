@@ -47,6 +47,7 @@ const pages: Route[] = [
     image: '/images/app-icon.jpg',
     element: <AppPage />,
     schema: applicationSchema,
+    modified: '2026-11-08',
   },
   {
     path: '/',
