@@ -10,9 +10,14 @@ export function PrivacyPage() {
           With your permission, Google Analytics measures page views and app store button clicks. It
           is not loaded before you choose “Allow analytics.” You can decline or change your choice
           using Analytics preferences below. We store that choice in your browser. Page URL query
-          strings and fragments are excluded from the events we send. Store clicks are not
-          downloads. GitHub processes network information to serve and secure the site, including
-          visitors’ IP addresses. See{' '}
+          strings and fragments are excluded from page URLs in the events we send. For recognized AI
+          services, we use the referral domain or an allowed source label in the URL to measure
+          which service brought you here. After consent, we keep that service name and the landing
+          page path in this tab’s session storage through site navigation, for up to 30 minutes
+          between page loads. We include them with page views and store clicks. We do not send
+          conversation links, prompts or arbitrary URL parameter values. Withdrawing consent clears
+          this saved attribution. Store clicks are not downloads. GitHub processes network
+          information to serve and secure the site, including visitors’ IP addresses. See{' '}
           <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">
             GitHub’s privacy statement
           </a>

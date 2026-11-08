@@ -1,6 +1,7 @@
 import './styles/site.css';
 import './styles/public.css';
 import './styles/simplified.css';
+import './features/app/app-screenshots.css';
 import { setupGoogleAnalytics } from './features/analytics/google-client';
 import { setupDownloadRouting } from './features/analytics/download-routing';
 

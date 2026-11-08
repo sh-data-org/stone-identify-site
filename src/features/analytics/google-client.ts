@@ -1,6 +1,13 @@
 import { analyticsReferrer } from './google';
 import { acquisition, appClickPlacement, appPlatform } from './acquisition';
 import { downloadArticleContext, downloadContextKey } from './article-context';
+import {
+  aiCampaignParameters,
+  aiReferralKey,
+  aiReferralParameters,
+  resolveAiReferral,
+  type AiReferral,
+} from './ai-referral';
 declare global {
   interface Window {
     dataLayer: unknown[];
@@ -22,6 +29,7 @@ export function setupGoogleAnalytics(container: HTMLElement) {
   if (!measurementId || !panel) return;
   let allowed = false;
   let started = false;
+  let aiReferral: AiReferral | null = null;
   window.dataLayer = window.dataLayer || [];
   function gtag(..._args: unknown[]) {
     // Keep Google's documented gtag command format (an Arguments object).
@@ -31,6 +39,20 @@ export function setupGoogleAnalytics(container: HTMLElement) {
   function start() {
     if (started) return;
     started = true;
+    const currentUrl = new URL(location.href);
+    let storedReferral = null;
+    try {
+      storedReferral = sessionStorage.getItem(aiReferralKey);
+    } catch {
+      if (status) status.textContent = 'Your browser could not read referral attribution.';
+    }
+    aiReferral = resolveAiReferral(currentUrl, document.referrer, storedReferral);
+    try {
+      if (aiReferral) sessionStorage.setItem(aiReferralKey, JSON.stringify(aiReferral));
+      else sessionStorage.removeItem(aiReferralKey);
+    } catch {
+      if (status) status.textContent = 'Your browser could not preserve referral attribution.';
+    }
     gtag('consent', 'default', {
       analytics_storage: 'granted',
       ad_storage: 'denied',
@@ -40,6 +62,8 @@ export function setupGoogleAnalytics(container: HTMLElement) {
     gtag('js', new Date());
     gtag('config', measurementId, {
       ...articleContext,
+      ...aiReferralParameters(aiReferral),
+      ...aiCampaignParameters(currentUrl, document.referrer),
       page_location: location.origin + location.pathname,
       page_referrer: analyticsReferrer(document.referrer),
       allow_google_signals: false,
@@ -66,10 +90,12 @@ export function setupGoogleAnalytics(container: HTMLElement) {
     }
     if (allowed) start();
     else {
+      aiReferral = null;
       try {
         sessionStorage.removeItem(downloadContextKey);
+        sessionStorage.removeItem(aiReferralKey);
       } catch {
-        if (status) status.textContent = 'Your browser could not clear saved article context.';
+        if (status) status.textContent = 'Your browser could not clear saved visit attribution.';
       }
     }
     if (!allowed && started) {
@@ -129,6 +155,7 @@ export function setupGoogleAnalytics(container: HTMLElement) {
     gtag('event', 'app_store_click', {
       ...articleContext,
       ...sourceContext,
+      ...aiReferralParameters(aiReferral),
       page_path: location.pathname,
       button_placement: placement,
       app_campaign: acquisition.campaign,

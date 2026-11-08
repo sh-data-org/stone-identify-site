@@ -60,6 +60,54 @@ uses MobileApplication and guides use Article with source citations. The article
 visible before the main image. All content is in static HTML, with crawler access through robots.txt.
 These are discoverability foundations, not evidence of AI citations or rankings.
 
+### AI referral measurement
+
+After analytics consent, recognized `utm_source` labels or exact referring domains identify
+ChatGPT (including `chat.openai.com`), Perplexity, Claude, Gemini, Copilot, Grok and You.com.
+The client sends `ai_source` and `ai_landing_page` on page views and `app_store_click` events.
+The entry page also sets GA4's standard campaign source and referral medium, so a ChatGPT
+source tag survives our removal of query strings from `page_location`.
+
+Attribution stays in this tab's session storage through internal navigation, including the
+desktop `/go/` chooser. It expires after 30 minutes between page loads. New direct/external
+entries, explicit non-AI source tags and consent withdrawal clear it. Storage failures keep
+entry-page measurement working but cannot preserve attribution across pages. No prompts,
+conversation URLs, arbitrary query values or fragment values are stored in this context.
+Store campaign links remain `stone-web`; these fields measure website referrals and store
+clicks, not app installs. Visitors who decline consent are not measured.
+
+GA4 property `556587483` has these event-scoped custom dimensions:
+
+| Display name | Event parameter | Purpose |
+| --- | --- | --- |
+| AI referral source | `ai_source` | Recognized assistant domain |
+| AI landing page | `ai_landing_page` | Original site landing path, carried to store clicks |
+
+Both definitions were saved and verified in the GA4 admin UI on November 8, 2026.
+
+For reporting in GA4 Explore, use **AI referral source** and **AI landing page** as rows,
+**Event name** as columns, and **Event count** as the metric. Filter Event name to
+`page_view` or `app_store_click`, and AI referral source to a recognized domain above.
+Use the existing **App platform** dimension to split store clicks by iOS and Android.
+For sessions, use Traffic acquisition with **Session source / medium** and the same domains.
+Page views and click events are counts, not unique visitors or installs.
+
+General Google/Bing referrals cannot reliably distinguish AI answers from ordinary search,
+so they are not relabeled as AI. Missing referrers/tags remain unattributed. A recognizable
+assistant referral does not prove a search query, recommendation, or organic citation;
+shared and manually tagged links can produce the same signal. Exclude documented QA visits
+when assessing growth. Custom dimensions are not retrospective, and production collection
+must be checked after the approved website release.
+
+### App page evidence
+
+Product copy was checked against the public US App Store lookup for app `6782013876` and
+the Google Play listing for `com.stocker.stoneidentify` on November 8, 2026. Free scanning
+is limited by the app/server allowance; no fixed quota, price or trial entitlement is promised.
+The Android screenshots are existing Gaver-owned captures of the real Compose UI with
+sample state and bundled AI artwork from the October 25 store-listing assets. Captions
+identify them as examples; their confidence percentages are not measured app accuracy.
+
 ## Release verification
 
 Local verification is not evidence of live indexing, incoming GA4 data or app downloads.

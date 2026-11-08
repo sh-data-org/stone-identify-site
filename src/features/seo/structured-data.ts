@@ -7,7 +7,7 @@ export const websiteId = `${siteUrl}#website`;
 export const applicationId = `${siteUrl}app/#application`;
 export const applicationName = 'Rock Identifier & Stone Scan';
 export const applicationDescription =
-  'A photo identification app for exploring possible matches for rocks, crystals, minerals and gemstones. Published by Yoav Tzori for educational use.';
+  'Use a photo to explore possible rock, crystal, mineral and gemstone matches. Compare lookalikes and save your finds in a personal collection.';
 
 export const applicationSchema: StructuredData = {
   '@type': 'MobileApplication',
@@ -22,6 +22,12 @@ export const applicationSchema: StructuredData = {
   sameAs: `https://apps.apple.com/us/app/id${acquisition.appId}`,
   image: `${siteUrl}images/app-icon.jpg`,
   author: { '@id': publisherId },
+  featureList: [
+    'Photo-based rock, crystal, mineral and gemstone suggestions',
+    'Stone profiles and comparisons',
+    'Saved stone collection',
+    'Optional Pro subscription',
+  ],
 };
 
 const androidApplicationSchema: StructuredData = {
@@ -32,6 +38,11 @@ const androidApplicationSchema: StructuredData = {
   operatingSystem: 'Android',
   url: `${siteUrl}app/`,
   installUrl: `https://play.google.com/store/apps/details?id=${acquisition.androidPackage}`,
+  sameAs: `https://play.google.com/store/apps/details?id=${acquisition.androidPackage}`,
+  screenshot: [
+    `${siteUrl}images/app-result-android.png`,
+    `${siteUrl}images/app-library-android.png`,
+  ],
   author: { '@type': 'Organization', name: 'Stocker Group' },
 };
 
