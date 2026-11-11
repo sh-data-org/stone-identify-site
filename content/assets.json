@@ -207,5 +207,16 @@
     "reviewed": true,
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Marble_%28GeoDIL_number_-_510%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "description": "Original GeoDIL specimen photograph, visually reviewed against its collection record; no changes."
+  },
+  {
+    "path": "/images/snowflake-obsidian.jpg",
+    "alt": "Dark snowflake obsidian from near Millard, Utah, with rounded pale radiating patches and a collection label",
+    "credit": "Mike Davis / Geoscience Digital Image Library, Ward’s University Rock Collection #106",
+    "license": "CC0 1.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snowflake_obsidian_(GeoDIL_number_-_414).jpg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/Snowflake_obsidian_%28GeoDIL_number_-_414%29.jpg",
+    "description": "GeoDIL specimen 414, near Millard, Utah. Original photograph resized for the web."
   }
 ]
