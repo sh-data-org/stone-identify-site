@@ -340,6 +340,10 @@ h3 {
   max-width: 650px;
   margin-bottom: 36px;
 }
+.comparison-intro {
+  max-width: 760px;
+  margin-bottom: 36px;
+}
 .article-page {
   max-width: 1200px;
   padding: 24px 32px 0;
