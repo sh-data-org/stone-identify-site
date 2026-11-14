@@ -218,5 +218,27 @@
     "reviewed": true,
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/Snowflake_obsidian_%28GeoDIL_number_-_414%29.jpg",
     "description": "GeoDIL specimen 414, near Millard, Utah. Original photograph resized for the web."
+  },
+  {
+    "path": "/images/agate-rough-lake-superior.jpg",
+    "alt": "Backlit Lake Superior shoreline agate with an amber translucent edge and curved impact marks",
+    "credit": "James St. John",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Agate_(shoreline_of_Lake_Superior,_Upper_Peninsula_of_Michigan,_USA)_1.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Agate_%28shoreline_of_Lake_Superior%2C_Upper_Peninsula_of_Michigan%2C_USA%29_1.jpg",
+    "description": "Shoreline pebble photographed with transmitted light. Resized for web."
+  },
+  {
+    "path": "/images/jasper-rough.jpg",
+    "alt": "Unpolished red jasper pebble with mottled patches held in a hand",
+    "credit": "Ryan Bushby (HighInBC)",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Unpolished_jasper.jpg",
+    "licenseUrl": "",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Unpolished_jasper.jpg",
+    "description": "Unpolished jasper specimen. Resized for web."
   }
 ]
