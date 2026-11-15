@@ -240,5 +240,16 @@
     "reviewed": true,
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Unpolished_jasper.jpg",
     "description": "Unpolished jasper specimen. Resized for web."
+  },
+  {
+    "path": "/images/limestone-gray-geodil.jpg",
+    "alt": "Gray, fine-grained limestone specimen from near Rochester, New York, with collection labels marked 152",
+    "credit": "Nessa Eull / Geoscience Digital Image Library, Ward’s University Rock Collection #152",
+    "license": "CC0 1.0",
+    "sourceUrl": "https://geodil.dperkins.org/h/484.html",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "reviewed": true,
+    "originalUrl": "https://geodil.dperkins.org/i/484.jpg",
+    "description": "GeoDIL specimen 484, a 9 cm fine-grained gray limestone with fossil fragments. Original photograph resized for the web."
   }
 ]
