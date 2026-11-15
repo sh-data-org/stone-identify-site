@@ -5,6 +5,7 @@ export type AppPlatform = 'ios' | 'android';
 export const appPlacements = [
   'header',
   'hero',
+  'home-guides',
   'article',
   'footer',
   'qr',

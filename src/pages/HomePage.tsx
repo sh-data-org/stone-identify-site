@@ -42,6 +42,25 @@ export function HomePage() {
             <h2>Start with what you can see</h2>
             <a href="/guides/">All guides ↗</a>
           </div>
+          <div className="prose home-app-intro">
+            <h3>A rock identifier app for the stones you find</h3>
+            <p>
+              Use Stone Identifier on iPhone or Android to scan a rock photo and get a starting
+              point for identification.
+            </p>
+            <p>
+              Take one photo of the whole rock in indirect daylight and another close-up of an
+              unpolished surface. Add something for scale and note where you found it. If the rock
+              has bands, veins or visible crystals, include those in the close-up.
+            </p>
+            <p>
+              Use the <a href="/identification-checklist/">rock identification checklist</a> to
+              record what you can see and compare those clues with your scan result.
+            </p>
+            <a className="button" href="/go/" data-app-placement="home-guides">
+              Get the rock identifier app
+            </a>
+          </div>
           <div className="article-grid">
             {articles.map((article) => (
               <ArticleCard key={article.slug} article={article} />
