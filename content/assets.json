@@ -251,5 +251,16 @@
     "reviewed": true,
     "originalUrl": "https://geodil.dperkins.org/i/484.jpg",
     "description": "GeoDIL specimen 484, a 9 cm fine-grained gray limestone with fossil fragments. Original photograph resized for the web."
+  },
+  {
+    "path": "/images/scoria-kilauea.jpg",
+    "alt": "Dark scoriaceous basalt with deep cavities and thick ridges between some openings",
+    "credit": "James St. John",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AScoriaceous_basalt_%28Holocene%3B_Kilauea_Volcano%2C_Hawaii%2C_USA%29_2_%2833377520028%29.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Scoriaceous_basalt_%28Holocene%3B_Kilauea_Volcano%2C_Hawaii%2C_USA%29_2_%2833377520028%29.jpg",
+    "reviewed": true,
+    "description": "Resized for web. Specimen from Hawaiʻi, approximately 4.5 cm across."
   }
 ]

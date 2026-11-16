@@ -577,5 +577,40 @@
         "url": "https://geodil.dperkins.org/h/484.html"
       }
     ]
+  },
+  {
+    "id": "20ccbda5-473d-5661-830f-c63b8f5cdfa6",
+    "published": "2026-11-16",
+    "cluster": "volcanic-rocks",
+    "targetKeyword": "pumice vs scoria",
+    "slug": "pumice-vs-scoria",
+    "category": "comparisons",
+    "title": "Pumice vs. Scoria: How to Tell Them Apart",
+    "description": "Compare the holes, wall thickness and weight of pumice and scoria. See two real specimens and learn why floating and color can mislead.",
+    "image": {
+      "path": "/images/pumice.jpg",
+      "alt": "Pale pumice specimen with a frothy texture and many small cavities"
+    },
+    "updated": "2026-11-16",
+    "sources": [
+      {
+        "title": "National Park Service: Pyroclasts and Pyroclastic Rocks",
+        "url": "https://www.nps.gov/subjects/volcanoes/pyroclasts.htm"
+      },
+      {
+        "title": "National Park Service: Let’s Talk Lava (Capulin Volcano)",
+        "url": "https://www.nps.gov/cavo/learn/education/classrooms/lets-talk-lava.htm"
+      },
+      {
+        "title": "USGS Hawaiian Volcano Observatory: When Rocks Fly",
+        "url": "https://www.usgs.gov/observatories/hvo/news/volcano-watch-when-rocks-fly"
+      },
+      {
+        "title": "USGS: Eruptions of Hawaiian Volcanoes",
+        "url": "https://pubs.usgs.gov/gip/117/gip117_sm.pdf"
+      }
+    ],
+    "body": "## Start with the material between the holes\n\nThe cavities in both rocks are called vesicles. They’re spaces left by gas bubbles as the molten rock cooled. Look at several holes on an exposed face that already shows the interior. The amount of solid rock separating neighboring holes gives you a better starting point than the color of the outside.\n\n| What to look at | More typical of pumice | More typical of scoria |\n| --- | --- | --- |\n| Material between holes | Thin glass walls give the surface a frothy texture | Thicker partitions leave more solid rock visible |\n| Hole pattern | Many small, close-set openings | Often coarser openings with more variation in size |\n| Dry pieces of a similar size | Usually feels lighter in the hand | Usually feels heavier in the hand |\n\n## Compare two real specimens\n\nIn the pale pumice photo, the small cavities crowd together across much of the surface. The dark scoriaceous basalt specimen from Hawaiʻi has some wide openings with visibly thicker ridges between them. Smaller holes appear on that piece too, so compare several areas before making a call. Different lighting can change how dark a specimen looks. If the outer surface is weathered or coated, check an exposed edge before relying on its appearance.\n\n![Dark scoriaceous basalt with deep cavities and thick ridges between some openings](/images/scoria-kilauea.jpg)\n\n*Scoriaceous basalt from Hawaiʻi, about 4.5 cm at its widest. [Photo by James St. John](https://commons.wikimedia.org/wiki/File%3AScoriaceous_basalt_%28Holocene%3B_Kilauea_Volcano%2C_Hawaii%2C_USA%29_2_%2833377520028%29.jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/), resized.*\n\n## Use weight as a second clue\n\nIf you have two dry pieces of roughly the same size, compare how heavy they feel. Pumice is usually lighter and often floats. Open, connected cavities can admit water quickly, though, and the USGS describes exceptionally light Hawaiian volcanic fragments that sink for this reason. A float test gives you one more observation and leaves the identification open when the textures disagree.\n\n## Photograph what you can see\n\nTake one picture of the whole piece and a close-up of the holes with a ruler beside them. Record where you found it, if you know. Use the [pumice guide](/guides/pumice-rock/) and [identification checklist](/identification-checklist/) to compare your notes. You can [open Stone Identifier](/go/) to explore a possible match from the photo and compare the result with what you see in hand.",
+    "answer": "Pumice usually has tightly packed holes with thin, glassy walls. Scoria often has wider holes and thicker walls, so a dry piece of the same size tends to feel heavier. Start with the texture on an exposed face."
   }
 ]
