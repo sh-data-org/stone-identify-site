@@ -166,3 +166,33 @@
 .app-download-card--compact p {
   font-size: 14px;
 }
+
+.article-inline-download {
+  display: none;
+}
+
+@media screen and (max-width: 760px) {
+  .article-inline-download {
+    display: block;
+    margin: 24px 0;
+  }
+
+  .article-inline-download .app-download-card {
+    overflow: clip;
+    padding: 18px;
+  }
+
+  .article-inline-download .app-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .article-inline-download .app-download-card h2 {
+    margin: 14px 0 8px;
+    font-size: 24px;
+  }
+
+  .article-inline-download .app-download-card p:first-of-type {
+    margin-bottom: 14px;
+  }
+}

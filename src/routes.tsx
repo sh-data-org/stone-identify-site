@@ -65,10 +65,11 @@ const pages: Route[] = [
   },
   {
     path: '/comparisons',
-    title: 'Compare similar stones and minerals',
+    title: 'Rock and mineral comparisons for lookalike stones',
     description:
-      'Compare lookalike stones using visible features and reference properties. Learn what a photograph can show and what needs closer examination.',
+      'Compare lookalike rocks and minerals by their layers, breaks and crystal faces. Find practical side-by-side guides for slate, shale, quartz and more.',
     element: <CollectionPage category="comparisons" />,
+    modified: '2026-11-13',
   },
   {
     path: '/about',

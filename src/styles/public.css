@@ -216,6 +216,10 @@ h3 {
   text-decoration: none;
   white-space: nowrap;
 }
+.home-app-intro {
+  max-width: 68ch;
+  margin-bottom: 28px;
+}
 .article-grid {
   gap: 24px;
 }
@@ -338,6 +342,10 @@ h3 {
   font-size: 18px;
   line-height: 1.6;
   max-width: 650px;
+  margin-bottom: 36px;
+}
+.comparison-intro {
+  max-width: 760px;
   margin-bottom: 36px;
 }
 .article-page {

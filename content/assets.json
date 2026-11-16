@@ -207,5 +207,137 @@
     "reviewed": true,
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Marble_%28GeoDIL_number_-_510%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "description": "Original GeoDIL specimen photograph, visually reviewed against its collection record; no changes."
+  },
+  {
+    "path": "/images/snowflake-obsidian.jpg",
+    "alt": "Dark snowflake obsidian from near Millard, Utah, with rounded pale radiating patches and a collection label",
+    "credit": "Mike Davis / Geoscience Digital Image Library, Ward’s University Rock Collection #106",
+    "license": "CC0 1.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snowflake_obsidian_(GeoDIL_number_-_414).jpg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/Snowflake_obsidian_%28GeoDIL_number_-_414%29.jpg",
+    "description": "GeoDIL specimen 414, near Millard, Utah. Original photograph resized for the web."
+  },
+  {
+    "path": "/images/agate-rough-lake-superior.jpg",
+    "alt": "Backlit Lake Superior shoreline agate with an amber translucent edge and curved impact marks",
+    "credit": "James St. John",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Agate_(shoreline_of_Lake_Superior,_Upper_Peninsula_of_Michigan,_USA)_1.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Agate_%28shoreline_of_Lake_Superior%2C_Upper_Peninsula_of_Michigan%2C_USA%29_1.jpg",
+    "description": "Shoreline pebble photographed with transmitted light. Resized for web."
+  },
+  {
+    "path": "/images/jasper-rough.jpg",
+    "alt": "Unpolished red jasper pebble with mottled patches held in a hand",
+    "credit": "Ryan Bushby (HighInBC)",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Unpolished_jasper.jpg",
+    "licenseUrl": "",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Unpolished_jasper.jpg",
+    "description": "Unpolished jasper specimen. Resized for web."
+  },
+  {
+    "path": "/images/limestone-gray-geodil.jpg",
+    "alt": "Gray, fine-grained limestone specimen from near Rochester, New York, with collection labels marked 152",
+    "credit": "Nessa Eull / Geoscience Digital Image Library, Ward’s University Rock Collection #152",
+    "license": "CC0 1.0",
+    "sourceUrl": "https://geodil.dperkins.org/h/484.html",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "reviewed": true,
+    "originalUrl": "https://geodil.dperkins.org/i/484.jpg",
+    "description": "GeoDIL specimen 484, a 9 cm fine-grained gray limestone with fossil fragments. Original photograph resized for the web."
+  },
+  {
+    "path": "/images/scoria-kilauea.jpg",
+    "alt": "Dark scoriaceous basalt with deep cavities and thick ridges between some openings",
+    "credit": "James St. John",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AScoriaceous_basalt_%28Holocene%3B_Kilauea_Volcano%2C_Hawaii%2C_USA%29_2_%2833377520028%29.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Scoriaceous_basalt_%28Holocene%3B_Kilauea_Volcano%2C_Hawaii%2C_USA%29_2_%2833377520028%29.jpg",
+    "reviewed": true,
+    "description": "Resized for web. Specimen from Hawaiʻi, approximately 4.5 cm across."
+  },
+  {
+    "path": "/images/anthracite-coal-usgs.jpg",
+    "alt": "Anthracite coal with a bright black sheen and irregular broken faces",
+    "credit": "U.S. Geological Survey",
+    "license": "Public domain",
+    "sourceUrl": "https://www.usgs.gov/media/images/anthracite-coal",
+    "licenseUrl": "",
+    "reviewed": true,
+    "originalUrl": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/DSC_0023.JPG",
+    "description": "Original specimen photograph resized for the website."
+  },
+  {
+    "path": "/images/specular-hematite.jpg",
+    "alt": "Shiny gray specular hematite with pale quartz patches",
+    "credit": "Lloyd.james0615",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Specular_Hematite.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/23/Specular_Hematite.jpg",
+    "description": "Original specimen photograph resized for the website."
+  },
+  {
+    "path": "/images/glassy-industrial-slag.jpg",
+    "alt": "Dark glassy slag with round gas bubbles",
+    "credit": "James St. John",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Slag_1.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/24/Slag_1.jpg",
+    "description": "Original specimen photograph resized for the website."
+  },
+  {
+    "path": "/images/magnetite-usgs.jpg",
+    "alt": "Dark granular magnetite with rusty weathering",
+    "credit": "U.S. Geological Survey",
+    "license": "Public domain",
+    "sourceUrl": "https://www.usgs.gov/media/images/magnetite-specimen",
+    "licenseUrl": "",
+    "reviewed": true,
+    "originalUrl": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/images/magnetite_0.jpg",
+    "description": "Original specimen photograph resized for the website."
+  },
+  {
+    "path": "/images/lodestone-paperclips.jpg",
+    "alt": "Smithsonian lodestone attracting steel paper clips",
+    "credit": "Ryan Somma",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Magnetite_Lodestone.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "reviewed": true,
+    "originalUrl": "https://live.staticflickr.com/2166/2268638529_3968eda7b7_o.jpg",
+    "description": "Original specimen photograph resized for the website."
+  },
+  {
+    "path": "/images/iron-rich-slag.jpg",
+    "alt": "Two views of an iron-rich slag fragment with rounded holes and a centimeter scale",
+    "credit": "Teresa Gilmore, Birmingham Museums Trust / Portable Antiquities Scheme / Trustees of the British Museum",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iron_Age_to_Medieval,_Slag_(FindID_288656).jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Iron_Age_to_Medieval%2C_Slag_%28FindID_288656%29.jpg",
+    "description": "Original specimen photograph resized for the website."
+  },
+  {
+    "path": "/images/sikhote-alin-meteorite.jpg",
+    "alt": "Sikhote-Alin iron meteorite with smooth exterior depressions",
+    "credit": "Jon Taylor",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sikhote-Alin_meteorite,_25g_individual.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Sikhote-Alin_meteorite%2C_25g_individual.jpg",
+    "description": "Original specimen photograph resized for the website."
   }
 ]
