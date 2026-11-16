@@ -7,6 +7,9 @@ import { relatedArticles } from '../features/articles/related';
 
 export function ArticlePage({ article }: { article: ArticleContent }) {
   const { html, headings } = renderArticle(article.body);
+  const secondSection = headings[1];
+  const inlineDownloadIndex = secondSection ? html.indexOf(`<h2 id="${secondSection.id}">`) : -1;
+  const hasInlineDownload = inlineDownloadIndex > 0;
   return (
     <Site>
       <article
@@ -50,7 +53,17 @@ export function ArticlePage({ article }: { article: ArticleContent }) {
                 ))}
               </ol>
             </details>
-            <div className="article-reading prose" dangerouslySetInnerHTML={{ __html: html }} />
+            {hasInlineDownload ? (
+              <div className="article-reading prose">
+                <div dangerouslySetInnerHTML={{ __html: html.slice(0, inlineDownloadIndex) }} />
+                <div className="article-inline-download">
+                  <AppDownloadCard placement="article" compact />
+                </div>
+                <div dangerouslySetInnerHTML={{ __html: html.slice(inlineDownloadIndex) }} />
+              </div>
+            ) : (
+              <div className="article-reading prose" dangerouslySetInnerHTML={{ __html: html }} />
+            )}
             <section className="sources">
               <h2>Sources</h2>
               <ul>

@@ -262,5 +262,82 @@
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Scoriaceous_basalt_%28Holocene%3B_Kilauea_Volcano%2C_Hawaii%2C_USA%29_2_%2833377520028%29.jpg",
     "reviewed": true,
     "description": "Resized for web. Specimen from Hawaiʻi, approximately 4.5 cm across."
+  },
+  {
+    "path": "/images/anthracite-coal-usgs.jpg",
+    "alt": "Anthracite coal with a bright black sheen and irregular broken faces",
+    "credit": "U.S. Geological Survey",
+    "license": "Public domain",
+    "sourceUrl": "https://www.usgs.gov/media/images/anthracite-coal",
+    "licenseUrl": "",
+    "reviewed": true,
+    "originalUrl": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/DSC_0023.JPG",
+    "description": "Original specimen photograph resized for the website."
+  },
+  {
+    "path": "/images/specular-hematite.jpg",
+    "alt": "Shiny gray specular hematite with pale quartz patches",
+    "credit": "Lloyd.james0615",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Specular_Hematite.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/23/Specular_Hematite.jpg",
+    "description": "Original specimen photograph resized for the website."
+  },
+  {
+    "path": "/images/glassy-industrial-slag.jpg",
+    "alt": "Dark glassy slag with round gas bubbles",
+    "credit": "James St. John",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Slag_1.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/24/Slag_1.jpg",
+    "description": "Original specimen photograph resized for the website."
+  },
+  {
+    "path": "/images/magnetite-usgs.jpg",
+    "alt": "Dark granular magnetite with rusty weathering",
+    "credit": "U.S. Geological Survey",
+    "license": "Public domain",
+    "sourceUrl": "https://www.usgs.gov/media/images/magnetite-specimen",
+    "licenseUrl": "",
+    "reviewed": true,
+    "originalUrl": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/images/magnetite_0.jpg",
+    "description": "Original specimen photograph resized for the website."
+  },
+  {
+    "path": "/images/lodestone-paperclips.jpg",
+    "alt": "Smithsonian lodestone attracting steel paper clips",
+    "credit": "Ryan Somma",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Magnetite_Lodestone.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "reviewed": true,
+    "originalUrl": "https://live.staticflickr.com/2166/2268638529_3968eda7b7_o.jpg",
+    "description": "Original specimen photograph resized for the website."
+  },
+  {
+    "path": "/images/iron-rich-slag.jpg",
+    "alt": "Two views of an iron-rich slag fragment with rounded holes and a centimeter scale",
+    "credit": "Teresa Gilmore, Birmingham Museums Trust / Portable Antiquities Scheme / Trustees of the British Museum",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iron_Age_to_Medieval,_Slag_(FindID_288656).jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Iron_Age_to_Medieval%2C_Slag_%28FindID_288656%29.jpg",
+    "description": "Original specimen photograph resized for the website."
+  },
+  {
+    "path": "/images/sikhote-alin-meteorite.jpg",
+    "alt": "Sikhote-Alin iron meteorite with smooth exterior depressions",
+    "credit": "Jon Taylor",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sikhote-Alin_meteorite,_25g_individual.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Sikhote-Alin_meteorite%2C_25g_individual.jpg",
+    "description": "Original specimen photograph resized for the website."
   }
 ]

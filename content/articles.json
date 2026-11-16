@@ -612,5 +612,87 @@
     ],
     "body": "## Start with the material between the holes\n\nThe cavities in both rocks are called vesicles. They’re spaces left by gas bubbles as the molten rock cooled. Look at several holes on an exposed face that already shows the interior. The amount of solid rock separating neighboring holes gives you a better starting point than the color of the outside.\n\n| What to look at | More typical of pumice | More typical of scoria |\n| --- | --- | --- |\n| Material between holes | Thin glass walls give the surface a frothy texture | Thicker partitions leave more solid rock visible |\n| Hole pattern | Many small, close-set openings | Often coarser openings with more variation in size |\n| Dry pieces of a similar size | Usually feels lighter in the hand | Usually feels heavier in the hand |\n\n## Compare two real specimens\n\nIn the pale pumice photo, the small cavities crowd together across much of the surface. The dark scoriaceous basalt specimen from Hawaiʻi has some wide openings with visibly thicker ridges between them. Smaller holes appear on that piece too, so compare several areas before making a call. Different lighting can change how dark a specimen looks. If the outer surface is weathered or coated, check an exposed edge before relying on its appearance.\n\n![Dark scoriaceous basalt with deep cavities and thick ridges between some openings](/images/scoria-kilauea.jpg)\n\n*Scoriaceous basalt from Hawaiʻi, about 4.5 cm at its widest. [Photo by James St. John](https://commons.wikimedia.org/wiki/File%3AScoriaceous_basalt_%28Holocene%3B_Kilauea_Volcano%2C_Hawaii%2C_USA%29_2_%2833377520028%29.jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/), resized.*\n\n## Use weight as a second clue\n\nIf you have two dry pieces of roughly the same size, compare how heavy they feel. Pumice is usually lighter and often floats. Open, connected cavities can admit water quickly, though, and the USGS describes exceptionally light Hawaiian volcanic fragments that sink for this reason. A float test gives you one more observation and leaves the identification open when the textures disagree.\n\n## Photograph what you can see\n\nTake one picture of the whole piece and a close-up of the holes with a ruler beside them. Record where you found it, if you know. Use the [pumice guide](/guides/pumice-rock/) and [identification checklist](/identification-checklist/) to compare your notes. You can [open Stone Identifier](/go/) to explore a possible match from the photo and compare the result with what you see in hand.",
     "answer": "Pumice usually has tightly packed holes with thin, glassy walls. Scoria often has wider holes and thicker walls, so a dry piece of the same size tends to feel heavier. Start with the texture on an exposed face."
+  },
+  {
+    "id": "abfa6287-ac26-41a5-9b42-1873d03e28ed",
+    "published": "2026-11-16",
+    "cluster": "appearance",
+    "targetKeyword": "black shiny rock identification",
+    "slug": "black-shiny-rock-identification",
+    "category": "guides",
+    "title": "Black Shiny Rock Identification With Photos",
+    "description": "Identify a black shiny rock by comparing real photos of obsidian, anthracite coal, hematite and slag. Check for curved breaks, bubbles and streak color.",
+    "answer": "A black shiny rock could be obsidian, anthracite coal, metallic hematite or industrial slag. Check what kind of shine it has, then look for curved breaks, round bubbles or a reddish-brown streak to narrow down the possibilities.",
+    "image": {
+      "path": "/images/obsidian.jpg",
+      "alt": "Black obsidian with glossy, curved fracture surfaces and a sharp broken edge"
+    },
+    "body": "## Black shiny rock identification chart\n\nTurn the dry specimen in daylight. A smooth face that reflects like glass, a surface that flashes like metal, and a grainy surface with pinpoints of sparkle are different clues. Look at a face that is already chipped or broken and compare that surface with the outside.\n\n| What you see | Compare with |\n| --- | --- |\n| Glossy black face with smooth, shell-shaped curves | Obsidian, slag or manufactured glass |\n| Jet-black chunk with a bright sheen that feels light for its size | Anthracite coal |\n| Steel-gray sparkle or metallic shine, with a red-brown streak | Hematite |\n| Glassy patches with numerous round bubbles or a melted-looking surface | Industrial slag |\n\n## Obsidian vs. anthracite coal\n\n**Obsidian** is volcanic glass. The specimen at the top of this guide shows broad, curved fracture surfaces and sharp edges. Anthracite can also break along curved surfaces, so use the feel of the piece and its streak as additional clues. **Anthracite** is a hard, lustrous coal that is relatively light for its size and can leave a dark streak.\n\n![Anthracite coal with a bright black sheen and irregular broken faces](/images/anthracite-coal-usgs.jpg)\n\n## Obsidian vs. slag when a black rock looks like glass\n\nSlag from industrial processes can look almost as glossy as obsidian. In the example below, the glass is dark green and dotted with many small, round bubbles. Look for bubbles along existing breaks and consider where you found the piece. An industrial site or old fill makes slag worth comparing. A curved fracture or a single pit gives you less to go on.\n\n![Dark glassy industrial slag with small round gas bubbles visible across the surface](/images/glassy-industrial-slag.jpg)\n\n## When the shine looks metallic\n\n**Specular hematite** can look steel gray or nearly black and sparkle across many small faces. Its powder is reddish brown even when the surface looks dark. On an ordinary loose specimen, a small mark on unglazed porcelain can show that powder color. Skip the streak test on jewelry or a specimen you want to keep intact.\n\n![Specular hematite with a steel-gray sparkle and pale quartz patches](/images/specular-hematite.jpg)\n\nIf the specimen also pulls toward a magnet, compare it with the photos and clues in our [magnetic rock identification guide](/guides/magnetic-rock-identification/). If you're looking at a polished black stone, read [obsidian vs. onyx](/comparisons/obsidian-vs-onyx/) for clues specific to polished pieces.\n\n## Compare your find with the Stone Identifier app\n\nTake one photo of the whole rock in indirect daylight and another of the shiniest face, bubbles, or existing break. Try the [Stone Identifier app for iPhone or Android](/app/) to get possible matches from a photo, then compare the suggested material with the features you can see and test in person.",
+    "sources": [
+      {
+        "title": "USGS Yellowstone Volcano Observatory on obsidian and curved fractures",
+        "url": "https://www.usgs.gov/observatories/yvo/news/yellowstones-tool-making-lava-flows"
+      },
+      {
+        "title": "USGS anthracite coal specimen and properties",
+        "url": "https://www.usgs.gov/media/images/anthracite-coal"
+      },
+      {
+        "title": "Greenfield Community College geology collection entry for anthracite",
+        "url": "https://www.gcc.mass.edu/geo/sample/mn842/"
+      },
+      {
+        "title": "University of Minnesota mineral guide to hematite",
+        "url": "https://commonminerals.esci.umn.edu/minerals-g-m/hematite"
+      },
+      {
+        "title": "Kansas Geological Survey on slag and other meteorite lookalikes",
+        "url": "https://kgs.ku.edu/meteorites-kansas"
+      }
+    ],
+    "updated": "2026-11-16"
+  },
+  {
+    "id": "d6c954a7-17f0-4807-8ddf-7029aa902f06",
+    "published": "2026-11-16",
+    "cluster": "identification",
+    "targetKeyword": "how to identify magnetic rocks",
+    "slug": "magnetic-rock-identification",
+    "category": "guides",
+    "title": "How to Identify Magnetic Rocks With Photos",
+    "description": "Found a heavy rock that sticks to a magnet? Compare real photos of magnetite, iron slag and an iron meteorite, and learn which clues to check next.",
+    "answer": "A rock can pull toward a magnet because it contains magnetite or metallic iron. Iron-rich slag and many meteorites can also attract a magnet. Look at where the pull is strongest and compare the surface and streak color to narrow down the possibilities.",
+    "image": {
+      "path": "/images/lodestone-paperclips.jpg",
+      "alt": "A lodestone at the Smithsonian attracting steel paper clips"
+    },
+    "body": "## Why is my rock magnetic?\n\n**Magnetite** is a common first comparison for a black or dark gray find that attracts a magnet. Magnetite can make up much of a specimen, or it can occur in grains mixed through another rock. **Lodestone** is magnetite that is naturally magnetized. The lodestone shown above attracts steel paper clips on its own.\n\n![USGS magnetite specimen with a dark granular surface and rusty weathering](/images/magnetite-usgs.jpg)\n\n## How to check a heavy black magnetic rock\n\nIf the specimen may be a meteorite, leave it as found and start with photos and an expert identification checklist. Keep magnets away from it to preserve its magnetic record. For an ordinary loose rock, bring a small ceramic magnet near several spots. Note whether the pull is obvious across the specimen or mostly near one dark patch.\n\nOn an ordinary specimen you can mark, rub a small corner over unglazed porcelain to see the color of the powder. Magnetite usually leaves a gray-black streak. Hematite can look just as dark on the surface, but it typically leaves a reddish-brown streak. A pull in one spot and a streak from another spot can reflect different minerals in the same rock.\n\n![Metallic-looking specular hematite with pale quartz patches, a dark mineral to compare with magnetite](/images/specular-hematite.jpg)\n\n## Magnetite vs. meteorite vs. iron slag\n\n| Material | Clues you can compare |\n| --- | --- |\n| Magnetite or magnetite-bearing rock | A noticeable magnetic pull and gray-black powder where magnetite is exposed |\n| Iron-rich slag | Round gas holes, glassy or rusty patches, and sometimes a magnetic pull |\n| Iron meteorite | Dense metal and sometimes broad, shallow thumbprint-like depressions. Shape and magnetic pull alone leave the identification open. |\n\n### Iron slag vs. a real meteorite in photos\n\nLook at the round openings in the iron-rich slag below. They are gas cavities in the material. On the Sikhote-Alin iron meteorite, the broad depressions are contours on the exterior. Rust, pits or a magnet pulling toward the specimen are reasons to compare more clues before deciding.\n\n![Two views of a porous iron-rich slag fragment with round gas holes and a centimeter scale](/images/iron-rich-slag.jpg)\n\n![Sikhote-Alin iron meteorite with broad, smooth depressions on its metallic exterior](/images/sikhote-alin-meteorite.jpg)\n\n## Could my magnetic rock be a meteorite?\n\nStart with where you found it, clear photos of several faces, and the [USGS meteorite checklist](https://www.usgs.gov/faqs/i-think-i-found-a-meteorite-how-can-i-tell-sure). If the clues still fit, ask a geological survey, university geology department or natural history museum about identification. For a glossy find with bubbles, see our [black shiny rock identification guide](/guides/black-shiny-rock-identification/).\n\nYou can also use the [Stone Identifier app for iPhone or Android](/app/) to explore possible matches from a photo. Keep your observations about magnetism and streak color alongside the photo so you can judge which suggested matches fit.",
+    "sources": [
+      {
+        "title": "University of Minnesota mineral guide to magnetite and its streak",
+        "url": "https://commonminerals.esci.umn.edu/minerals-g-m/magnetite"
+      },
+      {
+        "title": "Missouri Geological Survey on magnetite, hematite and lodestone",
+        "url": "https://dnr.mo.gov/document-search/magnetite-pub2926/pub2926"
+      },
+      {
+        "title": "Washington University in St. Louis on testing magnetic attraction",
+        "url": "https://sites.wustl.edu/meteoritesite/items/magnetic_attraction/"
+      },
+      {
+        "title": "USGS checklist for suspected meteorites",
+        "url": "https://www.usgs.gov/faqs/i-think-i-found-a-meteorite-how-can-i-tell-sure"
+      },
+      {
+        "title": "Arizona State University meteorite identification guide",
+        "url": "https://meteorites.asu.edu/meteorite-id"
+      },
+      {
+        "title": "Study of how hand magnets affect meteorites’ magnetic records",
+        "url": "https://doi.org/10.1029/2022JE007464"
+      }
+    ],
+    "updated": "2026-11-16"
   }
 ]
