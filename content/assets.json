@@ -349,5 +349,16 @@
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/VesicularBasalt1.jpg",
     "reviewed": true,
     "description": "Vesicular basalt from Sunset Crater, Arizona, with a coin and scale"
+  },
+  {
+    "path": "/images/vesicular-basalt-section.webp",
+    "alt": "Cross-section of vesicular basalt showing cavities in the solid groundmass",
+    "credit": "James St. John (resized and converted to WebP)",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vesicular_basalt_1.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/Vesicular_basalt_1.jpg",
+    "reviewed": true,
+    "description": "Cross-section of a vesicular basalt specimen; locality unrecorded."
   }
 ]
