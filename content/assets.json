@@ -339,5 +339,15 @@
     "reviewed": true,
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Sikhote-Alin_meteorite%2C_25g_individual.jpg",
     "description": "Original specimen photograph resized for the website."
+  },
+  {
+    "path": "/images/vesicular-basalt.jpg",
+    "alt": "Vesicular basalt from Sunset Crater, Arizona, with a coin and scale",
+    "credit": "Jstuby; scale added by Hike395",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:VesicularBasalt1.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/VesicularBasalt1.jpg",
+    "reviewed": true,
+    "description": "Vesicular basalt from Sunset Crater, Arizona, with a coin and scale"
   }
 ]

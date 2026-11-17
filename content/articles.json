@@ -591,7 +591,7 @@
       "path": "/images/pumice.jpg",
       "alt": "Pale pumice specimen with a frothy texture and many small cavities"
     },
-    "updated": "2026-11-16",
+    "updated": "2026-11-17",
     "sources": [
       {
         "title": "National Park Service: Pyroclasts and Pyroclastic Rocks",
@@ -610,7 +610,7 @@
         "url": "https://pubs.usgs.gov/gip/117/gip117_sm.pdf"
       }
     ],
-    "body": "## Start with the material between the holes\n\nThe cavities in both rocks are called vesicles. They’re spaces left by gas bubbles as the molten rock cooled. Look at several holes on an exposed face that already shows the interior. The amount of solid rock separating neighboring holes gives you a better starting point than the color of the outside.\n\n| What to look at | More typical of pumice | More typical of scoria |\n| --- | --- | --- |\n| Material between holes | Thin glass walls give the surface a frothy texture | Thicker partitions leave more solid rock visible |\n| Hole pattern | Many small, close-set openings | Often coarser openings with more variation in size |\n| Dry pieces of a similar size | Usually feels lighter in the hand | Usually feels heavier in the hand |\n\n## Compare two real specimens\n\nIn the pale pumice photo, the small cavities crowd together across much of the surface. The dark scoriaceous basalt specimen from Hawaiʻi has some wide openings with visibly thicker ridges between them. Smaller holes appear on that piece too, so compare several areas before making a call. Different lighting can change how dark a specimen looks. If the outer surface is weathered or coated, check an exposed edge before relying on its appearance.\n\n![Dark scoriaceous basalt with deep cavities and thick ridges between some openings](/images/scoria-kilauea.jpg)\n\n*Scoriaceous basalt from Hawaiʻi, about 4.5 cm at its widest. [Photo by James St. John](https://commons.wikimedia.org/wiki/File%3AScoriaceous_basalt_%28Holocene%3B_Kilauea_Volcano%2C_Hawaii%2C_USA%29_2_%2833377520028%29.jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/), resized.*\n\n## Use weight as a second clue\n\nIf you have two dry pieces of roughly the same size, compare how heavy they feel. Pumice is usually lighter and often floats. Open, connected cavities can admit water quickly, though, and the USGS describes exceptionally light Hawaiian volcanic fragments that sink for this reason. A float test gives you one more observation and leaves the identification open when the textures disagree.\n\n## Photograph what you can see\n\nTake one picture of the whole piece and a close-up of the holes with a ruler beside them. Record where you found it, if you know. Use the [pumice guide](/guides/pumice-rock/) and [identification checklist](/identification-checklist/) to compare your notes. You can [open Stone Identifier](/go/) to explore a possible match from the photo and compare the result with what you see in hand.",
+    "body": "## Start with the material between the holes\n\nThe cavities in both rocks are called vesicles. They’re spaces left by gas bubbles as the molten rock cooled. Look at several holes on an exposed face that already shows the interior. The amount of solid rock separating neighboring holes gives you a better starting point than the color of the outside.\n\n| What to look at | More typical of pumice | More typical of scoria |\n| --- | --- | --- |\n| Material between holes | Thin glass walls give the surface a frothy texture | Thicker partitions leave more solid rock visible |\n| Hole pattern | Many small, close-set openings | Often coarser openings with more variation in size |\n| Dry pieces of a similar size | Usually feels lighter in the hand | Usually feels heavier in the hand |\n\n## Compare two real specimens\n\nIn the pale pumice photo, the small cavities crowd together across much of the surface. The dark scoriaceous basalt specimen from Hawaiʻi has some wide openings with visibly thicker ridges between them. Smaller holes appear on that piece too, so compare several areas before making a call. Different lighting can change how dark a specimen looks. If the outer surface is weathered or coated, check an exposed edge before relying on its appearance.\n\n![Dark scoriaceous basalt with deep cavities and thick ridges between some openings](/images/scoria-kilauea.jpg)\n\n*Scoriaceous basalt from Hawaiʻi, about 4.5 cm at its widest. [Photo by James St. John](https://commons.wikimedia.org/wiki/File%3AScoriaceous_basalt_%28Holocene%3B_Kilauea_Volcano%2C_Hawaii%2C_USA%29_2_%2833377520028%29.jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/), resized.*\n\n## Use weight as a second clue\n\nIf you have two dry pieces of roughly the same size, compare how heavy they feel. Pumice is usually lighter and often floats. Open, connected cavities can admit water quickly, though, and the USGS describes exceptionally light Hawaiian volcanic fragments that sink for this reason. A float test gives you one more observation and leaves the identification open when the textures disagree.\n\n## Photograph what you can see\n\nTake one picture of the whole piece and a close-up of the holes with a ruler beside them. Record where you found it, if you know. Use the [pumice guide](/guides/pumice-rock/) and [identification checklist](/identification-checklist/) to compare your notes. You can [open Stone Identifier](/go/) to explore a possible match from the photo and compare the result with what you see in hand.\n\n## A dark rock with fewer holes?\n\nCompare your specimen with [vesicular basalt](/guides/vesicular-basalt/), and record the solid groundmass as well as the cavities.\n",
     "answer": "Pumice usually has tightly packed holes with thin, glassy walls. Scoria often has wider holes and thicker walls, so a dry piece of the same size tends to feel heavier. Start with the texture on an exposed face."
   },
   {
@@ -694,5 +694,40 @@
       }
     ],
     "updated": "2026-11-16"
+  },
+  {
+    "id": "c62cee97-5c0c-4b8b-85ac-ca7783540f27",
+    "published": "2026-11-17",
+    "updated": "2026-11-17",
+    "cluster": "volcanic-rocks",
+    "targetKeyword": "vesicular basalt",
+    "slug": "vesicular-basalt",
+    "category": "guides",
+    "title": "Vesicular basalt: How to recognize lava rock with holes",
+    "description": "Identify possible vesicular basalt using its dark groundmass and gas-bubble holes. Compare scoria, pumice and filled cavities before naming your specimen.",
+    "answer": "Vesicular basalt is basalt containing cavities left by gas bubbles in cooling lava. A typical specimen has a dark, fine-grained body with visible holes. The word **vesicular** describes the holes; **basalt** identifies the rock.",
+    "body": "If you have found a dark stone full of small cavities, vesicular basalt is a possibility. Start with the surrounding rock and the texture between the holes. A photograph of holes alone is rarely enough to settle the identification.\n\n## What created the holes?\n\nGas bubbles can grow in molten lava as pressure decreases. When the lava hardens around them, the cavities remain. The [USGS explains these cavities as vesicles](https://www.usgs.gov/educational-resources/find-feature-vesicles).\n\nTheir size and concentration can vary across a lava flow. The USGS describes [Columbia River basalt flow tops](https://or.water.usgs.gov/projs_dir/crbg/flowtop.html) where vesicles become more abundant toward the upper surface. A less bubbly piece and a strongly vesicular piece can therefore come from different parts of the same flow.\n\n## Four observations to make first\n\n1. **Look between the holes.** Is the body fine grained, or is it visibly made of separate pebbles or coarse crystals?\n2. **Inspect an existing exposed surface.** Record the color beneath the weathered outer coating without breaking the specimen.\n3. **Compare the cavities.** Note their sizes, shapes and distribution. Photograph both a close view and the entire stone.\n4. **Record the setting.** A piece attached to a lava outcrop carries more geological context than a loose stone in landscaping or construction fill.\n\nPlace a ruler beside the specimen. A small hole can look much larger in an unscaled phone photograph. Take one picture in diffuse daylight and another with light from the side to show the relief.\n\n## Vesicular basalt vs. scoria\n\nThe terminology overlaps. Scoria commonly describes very bubbly volcanic material; vesicular basalt often has more solid rock between the cavities. Rutgers describes vesicular basalt as a largely solid basalt body textured with small vesicles.\n\nTreat that distinction as a description of texture rather than a precise percentage you can estimate from a photo. Color and apparent weight help build the description but do not provide an absolute boundary.\n\nOur [pumice vs. scoria guide](/comparisons/pumice-vs-scoria/) explains another common comparison.\n\n## Vesicular basalt vs. pumice\n\nPumice also contains abundant cavities, so “it has holes” does not distinguish the two. Look at the texture of the material between them, how much solid material is present, and the overall geological setting.\n\nAvoid using a float test as your only identification method. Whether an individual porous rock floats can depend on its pore structure and how much water it has absorbed. Keep the specimen’s full set of observations together.\n\n## What if the holes contain white or colored material?\n\nFormer gas cavities can later become filled with minerals. Geologists call this an **amygdaloidal** texture. A filled cavity and an empty vesicle record different stages in the history of the same volcanic rock.\n\nDo not name the filling from color alone. Photograph the boundary between the filling and host rock. A hand lens may show crystal shapes or banding that a distant photograph misses. Those details are more useful than assuming every white patch is quartz.\n\n## When the answer should stay tentative\n\nA dark porous piece found in industrial fill may need comparison with manufactured material. A heavily weathered specimen may hide the original groundmass. In either case, write down the uncertainty and retain the location information.\n\nUse Stone’s identification tools as a starting point, then compare the suggested match with these observations and a geological source. For a scientifically important specimen, seek a qualified identification.\n",
+    "image": {
+      "path": "/images/vesicular-basalt.jpg",
+      "alt": "Vesicular basalt from Sunset Crater, Arizona, with a coin and scale"
+    },
+    "sources": [
+      {
+        "title": "USGS: Find-A-Feature—Vesicles",
+        "url": "https://www.usgs.gov/educational-resources/find-feature-vesicles"
+      },
+      {
+        "title": "USGS: Columbia River basalt flow tops",
+        "url": "https://or.water.usgs.gov/projs_dir/crbg/flowtop.html"
+      },
+      {
+        "title": "Rutgers University: Vesicular basalt",
+        "url": "https://geology.rutgers.edu/research/virtual-geo/projects/virtual-geo-projects/203-virtual-rocks-and-minerals/204-rock-types/1318-vesicular-basalt"
+      },
+      {
+        "title": "BCcampus geology laboratory manual: Igneous rocks",
+        "url": "https://pressbooks.bccampus.ca/geolmanual/chapter/overview-of-igneous-rocks/"
+      }
+    ]
   }
 ]
