@@ -729,5 +729,36 @@
         "url": "https://pressbooks.bccampus.ca/geolmanual/chapter/overview-of-igneous-rocks/"
       }
     ]
+  },
+  {
+    "id": "e579c10b-d970-5a10-92ee-a41ec09f82da",
+    "published": "2026-11-18",
+    "cluster": "sedimentary-rocks",
+    "targetKeyword": "conglomerate vs breccia",
+    "slug": "conglomerate-vs-breccia",
+    "category": "comparisons",
+    "title": "Conglomerate vs. Breccia: How to Tell Them Apart",
+    "description": "Compare rounded pebbles and angular fragments in real specimens. Learn how to read the outlines without mistaking pits or stains for clasts.",
+    "image": {
+      "path": "/images/conglomerate.jpg",
+      "alt": "Rounded quartz pebbles in Berne Conglomerate from Ohio"
+    },
+    "updated": "2026-11-18",
+    "sources": [
+      {
+        "title": "National Park Service: geologic terms",
+        "url": "https://www.nps.gov/subjects/geology/gri-glossary-of-geologic-terms.htm"
+      },
+      {
+        "title": "National Park Service: how rocks are classified",
+        "url": "https://www.nps.gov/subjects/geology/how-rocks-are-classified.htm"
+      },
+      {
+        "title": "Maricopa Community Colleges: Sedimentary Rock Field Guide",
+        "url": "https://open.maricopa.edu/physicalgeologymaricopa/chapter/3-4-sedimentary-rocks/"
+      }
+    ],
+    "body": "## Start with the outline of an embedded piece\n\nFind a patch where a solid fragment meets the finer material around it. Trace as much of the boundary as you can. If changing the angle of the light makes the edge vanish, the feature may be a shadow in a pit. A fragment should enclose visible material.\n\n![Rounded quartz pebbles set in Ohio’s Berne Conglomerate](/images/conglomerate.jpg)\n\nSeveral pale quartz pebbles in the Berne Conglomerate bend smoothly around their edges. Some look oval rather than round. Follow their curved outlines where they meet the darker material around them.\n\n## Compare the corners in a breccia\n\n![Long dark rip-up clasts with visible corners in a pale sandy matrix](/images/breccia-rip-up-clasts.jpg)\n\nIn this Ohio specimen, long dark fragments sit in a lighter sandy matrix. Look at their ends. Several meet the surrounding rock at a clear corner. The photo documents a rip-up clast breccia. A current can tear up partly consolidated sediment and bury the pieces in a new layer.\n\n| Clue | Conglomerate | Sedimentary breccia |\n| --- | --- | --- |\n| Overall outline | Curved edges on most visible clasts | Corners or straight edges on most visible clasts |\n| A single clast looks different | Compare several other pieces | Compare several other pieces |\n| Boundary is hard to trace | Inspect a second exposed face | Inspect a second exposed face |\n\n## Check more than one face\n\nA surface cuts through fragments at different angles. An otherwise angular piece may look rounded in one view, and weathering can also soften what you see. Inspect several pieces across a face and check a second exposed surface if one is available. If the group looks mixed, record a mix of rounded and angular clasts.\n\nShape gives you a clue about the fragments’ history. A rounded pebble may have been worn during transport, while the Ohio breccia shows one way angular pieces can form within a sedimentary setting. Different processes can make breccia, so the corners alone do not tell you where a sample came from.\n\n## Take an overview and a close-up\n\nPhotograph the whole rock with a ruler, then take a close-up where several boundaries are in focus. In the [conglomerate guide](/guides/conglomerate-rock/), compare how each pebble sits in the surrounding rock. Save the same two views in your [observation sheet](/identification-checklist/). You can use [Stone Identifier](/go/) to get a possible match and check it against the clast shapes yourself.",
+    "answer": "Conglomerate typically contains rounded gravel-sized fragments. Sedimentary breccia contains angular fragments. Trace several embedded pieces on an exposed surface to see which shape dominates."
   }
 ]

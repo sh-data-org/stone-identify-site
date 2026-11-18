@@ -360,5 +360,16 @@
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/Vesicular_basalt_1.jpg",
     "reviewed": true,
     "description": "Cross-section of a vesicular basalt specimen; locality unrecorded."
+  },
+  {
+    "path": "/images/breccia-rip-up-clasts.jpg",
+    "alt": "Dark angular rip-up clasts embedded in pale sandstone, with a scale at the bottom",
+    "credit": "James St. John",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rip-up_clasts_in_micaceous_sandstone_(lower_Pottsville_Group,_Lower_Pennsylvanian;_Pleasant_Valley_Limestone_Quarry,_Muskingum_County,_Ohio,_USA)_2_(45164399141).jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Rip-up_clasts_in_micaceous_sandstone_%28lower_Pottsville_Group%2C_Lower_Pennsylvanian%3B_Pleasant_Valley_Limestone_Quarry%2C_Muskingum_County%2C_Ohio%2C_USA%29_2_%2845164399141%29.jpg",
+    "description": "Original specimen photo resized for the web."
   }
 ]
