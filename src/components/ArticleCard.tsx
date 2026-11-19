@@ -14,7 +14,7 @@ export function ArticleCard({ article }: { article: ArticleContent }) {
       </div>
       <div className="card-copy">
         <span className="eyebrow">{categories[article.category]}</span>
-        <h2>{article.title}</h2>
+        <h2>{article.displayTitle ?? article.title}</h2>
         <p>{article.description}</p>
         <span className="text-link">Read the guide ↗</span>
       </div>
