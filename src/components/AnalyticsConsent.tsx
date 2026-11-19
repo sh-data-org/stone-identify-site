@@ -14,8 +14,8 @@ export function AnalyticsConsent() {
       >
         <h2>Help us improve these guides</h2>
         <p>
-          Allow Google Analytics cookies to measure visits and app-link clicks? You can keep reading
-          either way. <a href="/privacy/">Privacy details</a>
+          Allow Google Analytics cookies to measure page visits and clicks on links and buttons? You
+          can keep reading either way. <a href="/privacy/">Privacy details</a>
         </p>
         <div>
           <button className="button secondary" data-analytics-reject>

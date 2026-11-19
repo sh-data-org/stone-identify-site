@@ -6,11 +6,14 @@ import { acquisition } from '../src/features/analytics/acquisition';
 import { pageStructuredData } from '../src/features/seo/structured-data';
 import { jsonLd } from '../src/features/articles/render';
 
+const analyticsPaths = routes.map((route) => route.path).join(' ');
+
 function PageHead({ route }: { route: Route }) {
   const canonical = new URL(route.path, acquisition.siteUrl).href;
   return (
     <>
       <title>{`${route.title} | Stone Identifier`}</title>
+      <meta name="stone-public-paths" content={analyticsPaths} />
       <meta name="description" content={route.description} />
       <link rel="canonical" href={canonical} />
       <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />

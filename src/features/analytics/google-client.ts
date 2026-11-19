@@ -1,3 +1,4 @@
+import { clickInteraction } from './interaction';
 import { analyticsReferrer } from './google';
 import { acquisition, appClickPlacement, appPlatform } from './acquisition';
 import { downloadArticleContext, downloadContextKey } from './article-context';
@@ -27,6 +28,12 @@ export function setupGoogleAnalytics(container: HTMLElement) {
     ? { article_id: article.dataset.articleId, article_cluster: article.dataset.articleCluster }
     : {};
   if (!measurementId || !panel) return;
+  const pathList = document.querySelector<HTMLMetaElement>('meta[name="stone-public-paths"]');
+  const publicPaths = new Set(pathList?.content.split(' '));
+  const currentUrl = new URL(location.href);
+  const pagePath = publicPaths.has(currentUrl.pathname) ? currentUrl.pathname : '/404';
+  const pageUrl = new URL(pagePath, currentUrl.origin);
+  pageUrl.search = currentUrl.search;
   let allowed = false;
   let started = false;
   let aiReferral: AiReferral | null = null;
@@ -36,17 +43,28 @@ export function setupGoogleAnalytics(container: HTMLElement) {
     // eslint-disable-next-line prefer-rest-params
     window.dataLayer.push(arguments);
   }
+  function pageParameters() {
+    return {
+      ...articleContext,
+      ...aiReferralParameters(aiReferral),
+      page_path: pagePath,
+      page_location: currentUrl.origin + pagePath,
+      page_referrer: analyticsReferrer(document.referrer, currentUrl.origin, publicPaths),
+    };
+  }
+  function pageView() {
+    gtag('event', 'page_view', pageParameters());
+  }
   function start() {
     if (started) return;
     started = true;
-    const currentUrl = new URL(location.href);
     let storedReferral = null;
     try {
       storedReferral = sessionStorage.getItem(aiReferralKey);
     } catch {
       if (status) status.textContent = 'Your browser could not read referral attribution.';
     }
-    aiReferral = resolveAiReferral(currentUrl, document.referrer, storedReferral);
+    aiReferral = resolveAiReferral(pageUrl, document.referrer, storedReferral);
     try {
       if (aiReferral) sessionStorage.setItem(aiReferralKey, JSON.stringify(aiReferral));
       else sessionStorage.removeItem(aiReferralKey);
@@ -61,14 +79,13 @@ export function setupGoogleAnalytics(container: HTMLElement) {
     });
     gtag('js', new Date());
     gtag('config', measurementId, {
-      ...articleContext,
-      ...aiReferralParameters(aiReferral),
-      ...aiCampaignParameters(currentUrl, document.referrer),
-      page_location: location.origin + location.pathname,
-      page_referrer: analyticsReferrer(document.referrer),
+      ...pageParameters(),
+      ...aiCampaignParameters(pageUrl, document.referrer),
+      send_page_view: false,
       allow_google_signals: false,
       allow_ad_personalization_signals: false,
     });
+    pageView();
     const script = document.createElement('script');
     script.async = true;
     script.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
@@ -115,11 +132,20 @@ export function setupGoogleAnalytics(container: HTMLElement) {
     panel.hidden = false;
     panel.querySelector<HTMLButtonElement>('button')?.focus();
   });
-  document.addEventListener('click', (event) => {
-    if (!allowed || !(event.target instanceof Element)) return;
-    const link = event.target.closest<HTMLAnchorElement>('a[href]');
-    if (!link) return;
-    const destination = new URL(link.href);
+  function trackClick(event: MouseEvent) {
+    if (!allowed || event.button > 1 || !(event.target instanceof Element)) return;
+    const interaction = clickInteraction(event.target, currentUrl, publicPaths);
+    if (!interaction) return;
+    const { link, destination, parameters } = interaction;
+    const placement = destination && appClickPlacement(destination, link?.dataset.appPlacement);
+    if (!placement) {
+      gtag('event', 'site_click', {
+        ...pageParameters(),
+        ...parameters,
+        transport_type: 'beacon',
+      });
+    }
+    if (!destination) return;
     if (destination.origin === location.origin && destination.pathname === '/go/') {
       try {
         // Only retain public article metadata after consent and an explicit chooser click.
@@ -138,7 +164,6 @@ export function setupGoogleAnalytics(container: HTMLElement) {
       }
       return;
     }
-    const placement = appClickPlacement(destination, link.dataset.appPlacement);
     if (!placement) return;
     let sourceContext = null;
     if (location.pathname === '/go/') {
@@ -153,15 +178,37 @@ export function setupGoogleAnalytics(container: HTMLElement) {
       }
     }
     gtag('event', 'app_store_click', {
-      ...articleContext,
+      ...pageParameters(),
       ...sourceContext,
-      ...aiReferralParameters(aiReferral),
-      page_path: location.pathname,
+      ...parameters,
       button_placement: placement,
       app_campaign: acquisition.campaign,
       app_platform: appPlatform(destination),
       transport_type: 'beacon',
     });
+  }
+  document.addEventListener('click', trackClick, true);
+  document.addEventListener('auxclick', trackClick, true);
+  function syncSavedChoice() {
+    try {
+      const saved = localStorage.getItem(preferenceKey);
+      if (allowed !== (saved === 'granted')) {
+        // Reinitialize the tag and its consent state after a change in another tab.
+        allowed = false;
+        Reflect.set(window, `ga-disable-${measurementId}`, true);
+        location.reload();
+        return false;
+      }
+    } catch {
+      // If persistence is blocked, retain the explicit choice made on this document.
+    }
+    return allowed;
+  }
+  window.addEventListener('storage', (event) => {
+    if (event.key === preferenceKey || event.key === null) syncSavedChoice();
+  });
+  window.addEventListener('pageshow', (event) => {
+    if (event.persisted && syncSavedChoice()) pageView();
   });
   try {
     const saved = localStorage.getItem(preferenceKey);

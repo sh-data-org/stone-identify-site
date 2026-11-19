@@ -12,9 +12,17 @@ export function googleMeasurementId(
     return null;
   }
 }
-export function analyticsReferrer(value: string): string {
+export function analyticsReferrer(
+  value: string,
+  origin?: string,
+  paths?: ReadonlySet<string>,
+): string {
   try {
-    return new URL(value).origin;
+    const url = new URL(value);
+    if (url.protocol !== 'https:' && url.protocol !== 'http:') return '';
+    return url.origin === origin && paths?.has(url.pathname)
+      ? url.origin + url.pathname
+      : url.origin;
   } catch {
     return '';
   }

@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs';
 import { test } from 'node:test';
 import { createContext, runInContext } from 'node:vm';
 import ts from 'typescript';
+import * as interaction from '../src/features/analytics/interaction';
 import * as google from '../src/features/analytics/google';
 import * as acquisition from '../src/features/analytics/acquisition';
 import * as articleContext from '../src/features/analytics/article-context';
@@ -18,6 +19,10 @@ type Listener = (event: { target?: TestElement }) => void;
 class TestElement {
   hidden = false;
   textContent = '';
+  content = '';
+  tagName = '';
+  region = 'main';
+  peers: TestElement[] = [];
   href = '';
   dataset: Record<string, string> = {};
   listeners = new Map<string, Listener>();
@@ -31,8 +36,14 @@ class TestElement {
     this.listeners.set(name, listener);
   }
 
-  closest() {
-    return this.href ? this : null;
+  closest(selector: string): TestElement | null {
+    if (selector === 'a[href]') return this.href ? this : null;
+    if (selector.includes('input[type="submit"]') || selector === this.region) return this;
+    return null;
+  }
+
+  querySelectorAll() {
+    return [...this.peers, this];
   }
 
   click(target?: TestElement) {
@@ -69,6 +80,9 @@ function visit(
   } = {},
 ) {
   const document = new TestElement();
+  const pathList = new TestElement();
+  pathList.content = '/ /go/ /app/ /guides/';
+  document.children.set('meta[name="stone-public-paths"]', pathList);
   const container = new TestElement();
   const accept = new TestElement();
   const reject = new TestElement();
@@ -84,6 +98,7 @@ function visit(
   const local = storage(options.consent ? { 'stone-analytics-consent': options.consent } : {});
   const imports: Record<string, unknown> = {
     './google': google,
+    './interaction': interaction,
     './acquisition': acquisition,
     './article-context': articleContext,
     './ai-referral': aiReferral,
@@ -104,7 +119,10 @@ function visit(
       createElement: () => new TestElement(),
       head: { appendChild: (script: TestElement) => scripts.push(script) },
     }),
-    window: { dataLayer: { push: (command: IArguments) => commands.push([...command]) } },
+    window: {
+      addEventListener() {},
+      dataLayer: { push: (command: IArguments) => commands.push([...command]) },
+    },
     localStorage: local,
     sessionStorage: session,
     container,
@@ -116,7 +134,7 @@ function visit(
     link.dataset.appPlacement = 'hero';
     document.click(link);
   }
-  return { commands, scripts, session, container, accept, reject, status, storeClick };
+  return { document, commands, scripts, session, container, accept, reject, status, storeClick };
 }
 
 function parameters(command: unknown[] | undefined): Record<string, unknown> {
@@ -197,4 +215,44 @@ test('local previews cannot send analytics even with saved consent', () => {
   assert.equal(page.container.hidden, true);
   assert.equal(page.scripts.length, 0);
   assert.equal(page.commands.length, 0);
+});
+
+test('navigation and specialized clicks are emitted once in order with safe destinations', () => {
+  const page = visit({ consent: 'granted', referrer: 'https://stoneidentify.app/guides/?secret' });
+  const link = new TestElement();
+  link.href = 'https://stoneidentify.app/go/?private#detail';
+  link.peers.push(new TestElement());
+  page.document.click(link);
+  page.storeClick();
+  const external = new TestElement();
+  external.href = 'https://elsewhere.example/private';
+  page.document.click(external);
+  const preferences = new TestElement();
+  preferences.region = '#google-analytics';
+  page.document.click(preferences);
+  const events = page.commands.filter(([type]) => type === 'event');
+  assert.deepEqual(
+    events.map((event) => event[1]),
+    ['page_view', 'site_click', 'app_store_click', 'site_click'],
+  );
+  assert.equal(parameters(page.commands.find(([type]) => type === 'config')).send_page_view, false);
+  assert.equal(parameters(events[0]).page_referrer, 'https://stoneidentify.app/guides/');
+  assert.equal(parameters(events[1]).control_position, '2');
+  assert.equal(parameters(events[1]).click_region, 'main');
+  assert.equal(parameters(events[1]).click_destination, '/go/');
+  assert.equal(parameters(events[2]).click_destination, 'app_store');
+  assert.equal(parameters(events[3]).click_destination, 'external_link');
+  assert.doesNotMatch(JSON.stringify(events), /private|secret|elsewhere/);
+});
+
+test('unrecognized paths cannot leak into page or AI landing fields', () => {
+  const page = visit({
+    consent: 'granted',
+    url: 'https://stoneidentify.app/private/?utm_source=chatgpt.com',
+  });
+  assert.equal(
+    parameters(page.commands.find(([, name]) => name === 'page_view')).page_path,
+    '/404',
+  );
+  assert.doesNotMatch(JSON.stringify(page.commands), /private/);
 });
