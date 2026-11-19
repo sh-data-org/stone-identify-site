@@ -448,5 +448,93 @@
     "reviewed": true,
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Banded_Iron_Formation_Barberton.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "description": "Original specimen photograph resized for the web."
+  },
+  {
+    "path": "/images/flint-fracture.jpg",
+    "alt": "Brown flint with shallow curved fractures and a pale outer rim",
+    "credit": "Andreas Trepte",
+    "license": "CC BY-SA 2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flintstone.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Flintstone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "description": "Specimen photograph resized for display."
+  },
+  {
+    "path": "/images/dover-flint.jpg",
+    "alt": "Dark flint enclosed in white chalk from Dover, England",
+    "credit": "James St. John",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chert_nodule_in_chalk_(Upper_Cretaceous;_White_Cliffs_of_Dover,_England)_7.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Chert_nodule_in_chalk_%28Upper_Cretaceous%3B_White_Cliffs_of_Dover%2C_England%29_7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "description": "Specimen photograph resized for display."
+  },
+  {
+    "path": "/images/busuanga-bedded-chert.jpg",
+    "alt": "Folded thin beds of chert on Busuanga Island",
+    "credit": "Paul Christian B. Yang-ed",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Folded_layers_of_bedded_chert_formation_in_Busuanga,_Palawan_01.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Folded_layers_of_bedded_chert_formation_in_Busuanga%2C_Palawan_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "description": "Specimen photograph resized for display."
+  },
+  {
+    "path": "/images/gold-quartz.jpg",
+    "alt": "Native gold intergrown with pale quartz from La Gardette, France",
+    "credit": "Marie-Lan Taÿ Pamart",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Native_gold_in_quartz_La_Gardette_MNHN_Min%C3%A9ralogie.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/50/Native_gold_in_quartz_La_Gardette_MNHN_Min%C3%A9ralogie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "description": "Specimen photograph resized for display."
+  },
+  {
+    "path": "/images/pyrite-quartz.jpg",
+    "alt": "Brassy pyrite cube with striated faces on quartz",
+    "credit": "Carlin Green, USGS",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pyrite_and_quartz_(USGS).JPG",
+    "licenseUrl": "https://www.usgs.gov/media/images/pyrite-and-quartz",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/21/Pyrite_and_quartz_%28USGS%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "description": "Specimen photograph resized for display."
+  },
+  {
+    "path": "/images/mica-sheets.jpg",
+    "alt": "Thin sheet of muscovite flexing between fingers",
+    "credit": "James St. John",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Muscovite_mica_showing_flexibility.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Muscovite_mica_showing_flexibility.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "description": "Specimen photograph resized for display."
+  },
+  {
+    "path": "/images/mammoth-cave-chert.jpg",
+    "alt": "A dark, weathered chert ledge in the limestone wall of Mammoth Cave",
+    "credit": "James St. John",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manganese_oxide-coated_chert_in_limestone_(Lost_River_Chert_Bed,_Middle_Mississippian;_Martel_Avenue,_Mammoth_Cave,_Kentucky,_USA)_11_(37997530061).jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Manganese_oxide-coated_chert_in_limestone_%28Lost_River_Chert_Bed%2C_Middle_Mississippian%3B_Martel_Avenue%2C_Mammoth_Cave%2C_Kentucky%2C_USA%29_11_%2837997530061%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "description": "Photograph resized for display."
+  },
+  {
+    "path": "/images/chalcopyrite-quartz.jpg",
+    "alt": "Brassy chalcopyrite crystals with white quartz points from Peru",
+    "credit": "Rob Lavinsky, iRocks.com",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chalcopyrite-Quartz-235249.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "reviewed": true,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/Chalcopyrite-Quartz-235249.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "description": "Photograph resized for display."
   }
 ]

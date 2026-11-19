@@ -22,7 +22,7 @@ export function ArticlePage({ article }: { article: ArticleContent }) {
           <a href={`/${article.category}/`}>{categories[article.category]}</a>
         </nav>
         <header className="article-heading">
-          <h1>{article.title}</h1>
+          <h1>{article.displayTitle ?? article.title}</h1>
           <p className="intro">{article.answer}</p>
           <p className="byline">
             <a href="/about/">Stone Identifier editorial team</a> · Published{' '}
