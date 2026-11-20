@@ -536,5 +536,49 @@
     "reviewed": true,
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/Chalcopyrite-Quartz-235249.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "description": "Photograph resized for display."
+  },
+  {
+    "path": "/images/keokuk-quartz-geode.jpg",
+    "alt": "Two sections of a Keokuk, Iowa geode with pale quartz crystals and an inner opening",
+    "credit": "Rob Lavinsky, iRocks.com",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Quartz-181592.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/Quartz-181592.jpg",
+    "description": "Original file unchanged. The source identifies quartz and the Keokuk, Iowa locality.",
+    "reviewed": true
+  },
+  {
+    "path": "/images/geode-exterior-interior.jpg",
+    "alt": "Geode with a crystal-lined interior in the upper view and a rough tan exterior in the lower view",
+    "credit": "Manfred Heyde",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Geode_inside_outside.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/Geode_inside_outside.jpg",
+    "description": "Current Wikimedia original unchanged. The Wikimedia file history documents a prior background removal.",
+    "reviewed": true
+  },
+  {
+    "path": "/images/ironstone-nodule-lookalike.jpg",
+    "alt": "Rounded reddish-brown ironstone nodule with cracks on its surface",
+    "credit": "James St. John",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ironstone_nodule_1.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Ironstone_nodule_1.jpg",
+    "description": "Used the 960-pixel Wikimedia rendition, resized without cropping.",
+    "reviewed": true
+  },
+  {
+    "path": "/images/onyx-cameo-met.jpg",
+    "alt": "Roman onyx cameo with a cream carved head over a gray layer and a scale below",
+    "credit": "The Metropolitan Museum of Art, Bequest of W. Gedney Beatty, 1941",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "sourceUrl": "https://www.metmuseum.org/art/collection/search/253676",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Onyx_cameo_MET_DP143813.jpg",
+    "description": "The Met identifies the medium as onyx and the image as public domain. Object 41.160.446. Original file unchanged.",
+    "reviewed": true
   }
 ]
