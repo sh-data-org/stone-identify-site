@@ -1,7 +1,7 @@
 import { Download } from './Download';
 
 type Props = {
-  placement: 'article' | 'sidebar' | 'footer';
+  placement: 'article' | 'article-middle' | 'article-end' | 'sidebar' | 'footer';
   compact?: boolean;
 };
 

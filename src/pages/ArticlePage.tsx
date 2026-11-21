@@ -10,6 +10,8 @@ export function ArticlePage({ article }: { article: ArticleContent }) {
   const secondSection = headings[1];
   const inlineDownloadIndex = secondSection ? html.indexOf(`<h2 id="${secondSection.id}">`) : -1;
   const hasInlineDownload = inlineDownloadIndex > 0;
+  const middleHeading = headings.length >= 6 ? headings[Math.ceil(headings.length / 2)] : undefined;
+  const middleOffset = middleHeading ? html.indexOf(`<h2 id="${middleHeading.id}">`) : -1;
   return (
     <Site>
       <article
@@ -59,7 +61,13 @@ export function ArticlePage({ article }: { article: ArticleContent }) {
                 <div className="article-inline-download">
                   <AppDownloadCard placement="article" compact />
                 </div>
-                <div dangerouslySetInnerHTML={{ __html: html.slice(inlineDownloadIndex) }} />
+                <div dangerouslySetInnerHTML={{ __html: html.slice(inlineDownloadIndex, middleOffset > 0 ? middleOffset : undefined) }} />
+                {middleOffset > 0 && (
+                  <>
+                    <AppDownloadCard placement="article-middle" compact />
+                    <div dangerouslySetInnerHTML={{ __html: html.slice(middleOffset) }} />
+                  </>
+                )}
               </div>
             ) : (
               <div className="article-reading prose" dangerouslySetInnerHTML={{ __html: html }} />
@@ -83,7 +91,7 @@ export function ArticlePage({ article }: { article: ArticleContent }) {
               ))}
               <a href="/identification-checklist/">Printable observation sheet</a>
             </section>
-            <AppDownloadCard placement="article" />
+            <AppDownloadCard placement="article-end" />
           </div>
           <aside className="download-aside">
             <AppDownloadCard placement="sidebar" compact />

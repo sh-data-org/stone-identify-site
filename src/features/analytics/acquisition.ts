@@ -12,6 +12,8 @@ export const appPlacements = [
   'sticky',
   'sidebar',
   'article-top',
+  'article-middle',
+  'article-end',
 ] as const;
 
 export function appStoreUrl(

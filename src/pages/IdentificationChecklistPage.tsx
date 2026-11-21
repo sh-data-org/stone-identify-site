@@ -45,6 +45,11 @@ export function IdentificationChecklistPage() {
             Do not scratch, acid-test, heat or break jewelry or a valued specimen to fill in this
             sheet. Record an unknown property as unknown.
           </p>
+          <p>
+            For a pale, granular rock, use the{' '}
+            <a href="/guides/marble-rock/">marble identification guide</a> to compare your edge
+            photo with marble and quartzite specimens.
+          </p>
           <h2>For clubs and educators</h2>
           <p>
             You may print and share this original worksheet with attribution to Stone Identifier.
