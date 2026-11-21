@@ -60,6 +60,11 @@ export function AppPage() {
           and trial eligibility. Features and offers can differ by platform. Manage or cancel a
           subscription in your Apple ID or Google Play subscription settings.
         </p>
+        <p>
+          Prefer to start in your browser? Use our{' '}
+          <a href="/guides/identify-a-rock-online-for-free/">free rock identification key</a> to
+          compare your find with labeled specimens.
+        </p>
         <h2>Which app should I download?</h2>
         <p>Stone Identifier is this website. Our apps have different names in the two stores:</p>
         <ul>
@@ -88,7 +93,7 @@ export function AppPage() {
         </p>
         <h2>Start with a guide</h2>
         <p>
-          Learn{' '}
+          Learn <a href="/guides/identify-stones-and-crystals-by-picture/">how to read a crystal picture</a>,{' '}
           <a href="/guides/photograph-a-rock-for-identification/">how to photograph your stone</a>{' '}
           or <a href="/guides/why-rock-scans-disagree/">why two scans can disagree</a>. Compare{' '}
           <a href="/comparisons/quartz-vs-calcite/">quartz and calcite</a>, learn{' '}
