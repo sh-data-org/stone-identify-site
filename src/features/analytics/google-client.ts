@@ -15,6 +15,12 @@ declare global {
     dataLayer: unknown[];
   }
 }
+const pageNames = new Map([
+  ['/', 'Home – Rock Identification'],
+  ['/jewelry/', 'Jewelry – Guide Directory'],
+  ['/apps/', 'Apps – Guide Directory'],
+  ['/404', 'Page Not Found'],
+]);
 const preferenceKey = 'stone-analytics-consent';
 export function setupGoogleAnalytics(container: HTMLElement) {
   if (location.origin !== acquisition.siteUrl) {
@@ -49,6 +55,7 @@ export function setupGoogleAnalytics(container: HTMLElement) {
       ...articleContext,
       ...aiReferralParameters(aiReferral),
       page_path: pagePath,
+      page_title: pageNames.get(pagePath) ?? document.title,
       page_location: currentUrl.origin + pagePath,
       page_referrer: analyticsReferrer(document.referrer, currentUrl.origin, publicPaths),
     };

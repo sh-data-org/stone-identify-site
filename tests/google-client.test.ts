@@ -75,6 +75,7 @@ function visit(
   options: {
     url?: string;
     referrer?: string;
+    title?: string;
     consent?: string;
     session?: Record<string, string>;
     unavailableStorage?: boolean;
@@ -82,7 +83,7 @@ function visit(
 ) {
   const document = new TestElement();
   const pathList = new TestElement();
-  pathList.content = '/ /go/ /app/ /guides/ /comparisons/quartz-vs-calcite/';
+  pathList.content = '/ /apps/ /jewelry/ /go/ /app/ /guides/ /comparisons/quartz-vs-calcite/';
   document.children.set('meta[name="stone-public-paths"]', pathList);
   const container = new TestElement();
   const accept = new TestElement();
@@ -117,6 +118,7 @@ function visit(
     },
     location: { origin: url.origin, pathname: url.pathname, href: url.href, reload() {} },
     document: Object.assign(document, {
+      title: options.title ?? 'Stone Identifier App',
       referrer: options.referrer ?? '',
       createElement: () => new TestElement(),
       head: { appendChild: (script: TestElement) => scripts.push(script) },
@@ -144,6 +146,22 @@ function parameters(command: unknown[] | undefined): Record<string, unknown> {
   assert(result && typeof result === 'object');
   return Object.fromEntries(Object.entries(result));
 }
+
+test('names home, legacy directories, articles and missing pages on direct entry', () => {
+  const title = 'Quartz vs. Calcite';
+  for (const [path, expected] of [
+    ['/', 'Home – Rock Identification'],
+    ['/apps/', 'Apps – Guide Directory'],
+    ['/jewelry/', 'Jewelry – Guide Directory'],
+    ['/comparisons/quartz-vs-calcite/', title],
+    ['/private-or-unknown/', 'Page Not Found'],
+  ]) {
+    const page = visit({ url: 'https://stoneidentify.app' + path, title });
+    page.accept.click();
+    const view = page.commands.find(([, name]) => name === 'page_view');
+    assert.equal(parameters(view).page_title, expected);
+  }
+});
 
 test('no analytics or attribution storage before consent or after rejection', () => {
   const page = visit();
