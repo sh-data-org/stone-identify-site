@@ -1,3 +1,4 @@
+import * as socialCampaign from '../src/features/analytics/social-campaign';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { test } from 'node:test';
@@ -81,7 +82,7 @@ function visit(
 ) {
   const document = new TestElement();
   const pathList = new TestElement();
-  pathList.content = '/ /go/ /app/ /guides/';
+  pathList.content = '/ /go/ /app/ /guides/ /comparisons/quartz-vs-calcite/';
   document.children.set('meta[name="stone-public-paths"]', pathList);
   const container = new TestElement();
   const accept = new TestElement();
@@ -97,6 +98,7 @@ function visit(
   const session = storage(options.session, options.unavailableStorage);
   const local = storage(options.consent ? { 'stone-analytics-consent': options.consent } : {});
   const imports: Record<string, unknown> = {
+    './social-campaign': socialCampaign,
     './google': google,
     './interaction': interaction,
     './acquisition': acquisition,
@@ -255,4 +257,24 @@ test('unrecognized paths cannot leak into page or AI landing fields', () => {
     '/404',
   );
   assert.doesNotMatch(JSON.stringify(page.commands), /private/);
+});
+
+test('consented social landing preserves campaign attribution and counts one store click', () => {
+  const page = visit({
+    url: 'https://stoneidentify.app/comparisons/quartz-vs-calcite/?utm_source=facebook&utm_medium=social&utm_campaign=stone-comparison&utm_content=clue-first&private=excluded',
+  });
+  page.storeClick();
+  assert.equal(page.commands.length, 0);
+  page.accept.click();
+  page.storeClick();
+  const config = parameters(page.commands.find(([type]) => type === 'config'));
+  assert.equal(config.page_location, 'https://stoneidentify.app/comparisons/quartz-vs-calcite/');
+  const clicks = page.commands.filter(([, name]) => name === 'app_store_click');
+  assert.equal(clicks.length, 1);
+  assert.equal(parameters(clicks[0]).app_platform, 'ios');
+  assert.equal(config.campaign_source, 'facebook');
+  assert.equal(config.campaign_medium, 'social');
+  assert.equal(config.campaign_name, 'stone-comparison');
+  assert.equal(config.campaign_content, 'clue-first');
+  assert.equal(JSON.stringify(page.commands).includes('excluded'), false);
 });

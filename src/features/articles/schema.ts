@@ -14,6 +14,7 @@ export const articleSchema = z
     slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
     category: z.enum(['guides', 'comparisons']),
     title: z.string().min(5).max(90),
+    inlineDownloadLabel: z.string().trim().min(1).max(50).optional(),
     displayTitle: z.string().min(5).max(90).optional(),
     description: z.string().min(50).max(180),
     answer: z.string().min(50).max(600),

@@ -1,3 +1,4 @@
+import { Download } from '../components/Download';
 import { Site } from '../components/Site';
 import { AppDownloadCard } from '../components/AppDownloadCard';
 import { renderArticle } from '../features/articles/render';
@@ -59,7 +60,11 @@ export function ArticlePage({ article }: { article: ArticleContent }) {
               <div className="article-reading prose">
                 <div dangerouslySetInnerHTML={{ __html: html.slice(0, inlineDownloadIndex) }} />
                 <div className="article-inline-download">
-                  <AppDownloadCard placement="article" compact />
+                  {article.inlineDownloadLabel ? (
+                    <Download placement="article" label={article.inlineDownloadLabel} />
+                  ) : (
+                    <AppDownloadCard placement="article" compact />
+                  )}
                 </div>
                 <div dangerouslySetInnerHTML={{ __html: html.slice(inlineDownloadIndex, middleOffset > 0 ? middleOffset : undefined) }} />
                 {middleOffset > 0 && (

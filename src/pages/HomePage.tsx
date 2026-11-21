@@ -45,8 +45,8 @@ export function HomePage() {
           <div className="prose home-app-intro">
             <h3>A rock identifier app for the stones you find</h3>
             <p>
-              Use Stone Identifier on iPhone or Android to scan a rock photo and get a starting
-              point for identification.
+              Use the <a href="/app/">Stone Identifier app</a> on iPhone or Android to explore
+              possible matches for a rock you found.
             </p>
             <p>
               Take one photo of the whole rock in indirect daylight and another close-up of an

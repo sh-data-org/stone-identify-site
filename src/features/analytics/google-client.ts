@@ -1,3 +1,4 @@
+import { socialCampaignParameters } from './social-campaign';
 import { clickInteraction } from './interaction';
 import { analyticsReferrer } from './google';
 import { acquisition, appClickPlacement, appPlatform } from './acquisition';
@@ -81,6 +82,7 @@ export function setupGoogleAnalytics(container: HTMLElement) {
     gtag('config', measurementId, {
       ...pageParameters(),
       ...aiCampaignParameters(pageUrl, document.referrer),
+      ...socialCampaignParameters(pageUrl),
       send_page_view: false,
       allow_google_signals: false,
       allow_ad_personalization_signals: false,

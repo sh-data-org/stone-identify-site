@@ -1,10 +1,11 @@
 import { appStoreUrl, googlePlayUrl, type appPlacements } from '../features/analytics/acquisition';
 
 type Props = {
+  label?: string;
   placement?: (typeof appPlacements)[number];
 };
 
-export function Download({ placement = 'article' }: Props) {
+export function Download({ placement = 'article', label = 'Download app ↗' }: Props) {
   return (
     <div className="download-options">
       <a
@@ -13,7 +14,7 @@ export function Download({ placement = 'article' }: Props) {
         data-smart-download
         data-app-placement={placement}
       >
-        Download app ↗
+        {label}
       </a>
       <div className="download-stores" aria-label="Choose your app store">
         <a href={appStoreUrl()} data-app-placement={placement}>
