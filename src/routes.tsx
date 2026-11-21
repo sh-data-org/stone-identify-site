@@ -3,8 +3,6 @@ import { AppPage } from './pages/AppPage';
 import { DownloadPage } from './pages/DownloadPage';
 import {
   applicationSchema,
-  applicationName,
-  applicationDescription,
   publisherId,
   websiteId,
   type StructuredData,
@@ -42,12 +40,13 @@ const pages: Route[] = [
   },
   {
     path: '/app',
-    title: applicationName,
-    description: applicationDescription,
+    title: 'Stone Identifier App for iPhone and Android',
+    description:
+      'Identify a stone from a photo, compare possible matches and save your finds. See how free scanning works and get the app for iPhone or Android.',
     image: '/images/app-icon.jpg',
     element: <AppPage />,
     schema: applicationSchema,
-    modified: '2026-11-08',
+    modified: '2026-11-21',
   },
   {
     path: '/',

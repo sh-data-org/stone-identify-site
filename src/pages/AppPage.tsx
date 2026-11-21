@@ -1,15 +1,21 @@
 import { Site } from '../components/Site';
 import { Download } from '../components/Download';
-import { applicationName, applicationDescription } from '../features/seo/structured-data';
 import { AppScreenshots } from '../features/app/AppScreenshots';
 
 export function AppPage() {
   return (
     <Site>
       <article className="section simple-page prose app-page">
-        <h1>{applicationName}</h1>
-        <p className="intro">{applicationDescription}</p>
+        <h1>Stone identifier app for iPhone and Android</h1>
+        <p className="intro">
+          Take a picture of a rock, mineral or crystal and compare the suggested match with the
+          stone in your hand. You can start with a photo already on your phone.
+        </p>
         <Download placement="hero" />
+        <p>
+          On iPhone, the app is free to download and includes limited free scanning.{' '}
+          <a href="#free-scans">See what’s included</a>.
+        </p>
         <h2>Identify a rock with your phone</h2>
         <p>
           Take a photo or choose one from your library to explore a likely rock, crystal, mineral or
@@ -36,15 +42,13 @@ export function AppPage() {
             investigate features a photo cannot settle. Save the find to return to it later.
           </li>
         </ol>
-        <h2>Example: investigating a purple crystal</h2>
+        <h2>What does a stone identification result look like?</h2>
         <p>
-          Suppose the app suggests amethyst for your purple crystal. Treat that as a possible match,
-          then compare the specimen’s crystal shape and other visible clues with fluorite. Our{' '}
-          <a href="/comparisons/amethyst-vs-fluorite/">amethyst vs fluorite guide</a> explains what
-          to look for. If the clues disagree or are unclear, keep the identity uncertain and ask a
-          qualified specialist before making a purchase or valuation decision.
+          We scanned a glossy black specimen. The app suggested obsidian and pointed out the curved
+          breaks across its surface. See the original photo and the clues in our{' '}
+          <a href="/guides/black-shiny-rock-identification/">black shiny rock scan example</a>.
         </p>
-        <h2>Is the app free? What does Pro include?</h2>
+        <h2 id="free-scans">Is the stone identifier app free?</h2>
         <p>
           The iOS app is free to download with optional in-app purchases. Free scanning is limited;
           check the allowance shown in the app. Pro includes unlimited scans, additional AI
@@ -84,7 +88,10 @@ export function AppPage() {
         </p>
         <h2>Start with a guide</h2>
         <p>
-          Compare <a href="/comparisons/quartz-vs-calcite/">quartz and calcite</a>, learn{' '}
+          Learn{' '}
+          <a href="/guides/photograph-a-rock-for-identification/">how to photograph your stone</a>{' '}
+          or <a href="/guides/why-rock-scans-disagree/">why two scans can disagree</a>. Compare{' '}
+          <a href="/comparisons/quartz-vs-calcite/">quartz and calcite</a>, learn{' '}
           <a href="/guides/how-to-identify-agate/">what to look for in agate</a>, or use our{' '}
           <a href="/identification-checklist/">observation sheet</a> before exploring a possible
           match.
