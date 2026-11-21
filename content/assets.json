@@ -580,5 +580,16 @@
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Onyx_cameo_MET_DP143813.jpg",
     "description": "The Met identifies the medium as onyx and the image as public domain. Object 41.160.446. Original file unchanged.",
     "reviewed": true
+  },
+  {
+    "path": "/images/quartzite-echo-lake.jpg",
+    "alt": "Close-up of pale green quartzite grains in GeoDIL specimen 513",
+    "credit": "Nessa Eull",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Quartzite_(GeoDIL_number_-_513).jpg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "reviewed": true,
+    "originalUrl": "https://geodil.dperkins.org/i/513.jpg",
+    "description": "Original specimen photo resized for the web."
   }
 ]

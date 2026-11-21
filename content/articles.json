@@ -956,5 +956,36 @@
       }
     ],
     "body": "## Check the outside first\n\nTurn the rock over in daylight. Look for a rounded outline, a rough rind, and any opening that already exposes the interior. Tilt the piece toward the light and see whether the opening leads to a cavity with crystals attached to its walls. A sparkle on a solid face could come from a vein or a surface coating.\n\n![Geode with a crystal-lined interior in the upper view and a rough tan exterior in the lower view](/images/geode-exterior-interior.jpg)\n\nCompare the two views above. The rough exterior gives you an idea of what an unopened geode can look like. In the cut view, the crystals grow inward from the wall and leave open space near the center. That structure is the stronger clue.\n\n## Compare a geode with its lookalikes\n\n| What you see | What to consider |\n| --- | --- |\n| Crystals attached to the walls of an internal cavity | A geode is a strong possibility. The Keokuk quartz geode at the top is one example. |\n| A rounded nodule with no interior visible | Keep geode, concretion and other nodules open. Shape alone cannot settle it. |\n| A mostly solid interior with bands or a contrasting center | Compare with an agate-filled nodule or a thunderegg. Some thundereggs also have cavities. |\n| A rusty brown rounded lump | Compare the surface with ironstone, then look for additional evidence. Color alone is weak. |\n\n![Rounded reddish-brown ironstone nodule with cracks on its surface](/images/ironstone-nodule-lookalike.jpg)\n\nThis ironstone nodule has a rounded outline and irregular surface. It shows why a lumpy rind is a clue to document. The New Mexico Bureau of Geology notes that some concretions are hollow too. Weight in your hand or a sound when the piece moves won’t identify the mineral or reveal whether crystals line a cavity.\n\n## Photograph a possible geode\n\n1. Take an overview beside a ruler and a second photo showing the opposite side.\n2. Photograph any existing opening from the side. Move the light until you can see the wall and the space behind it.\n3. Record where you found it and whether it was loose or still in the surrounding rock. Keep an unknown locality marked as unknown.\n\n## Can you tell without opening it?\n\nIf the piece is sealed, label it “possible geode” in your notes. Keep a valuable or borrowed specimen intact and ask a museum or rock club to examine it. If a cavity is already exposed, use our [quartz crystal guide](/guides/quartz-crystal/) to compare crystal faces. For a mostly solid banded piece, see the [rough agate guide](/guides/how-to-identify-agate/).\n\n[Try Stone Identifier with your photos](/go/) for a possible match, then check it against the cavity, rind and texture you recorded.\n"
+  },
+  {
+    "id": "0246ca55-a4bc-530b-9cb0-76375957f600",
+    "published": "2026-11-21",
+    "cluster": "metamorphic-rocks",
+    "targetKeyword": "marble vs quartzite",
+    "slug": "marble-vs-quartzite",
+    "category": "comparisons",
+    "title": "Marble vs. Quartzite: Three Identification Clues",
+    "description": "Compare real marble and quartzite photos. Learn what grain texture can show, when hardness helps, and why a countertop name can be misleading.",
+    "image": {
+      "path": "/images/marble-calcite-dolomite.jpg",
+      "alt": "Gray and pale granular marble specimen from Lucerne Valley, California, with painted collection number 177"
+    },
+    "updated": "2026-11-21",
+    "sources": [
+      {
+        "title": "National Park Service: metamorphic rocks",
+        "url": "https://www.nps.gov/subjects/geology/metamorphic-rocks.htm"
+      },
+      {
+        "title": "National Park Service: Mohs hardness",
+        "url": "https://www.nps.gov/articles/mohs-hardness-scale.htm"
+      },
+      {
+        "title": "Utah Geological Survey: Igneous, Sedimentary, and Metamorphic Rocks",
+        "url": "https://geology.utah.gov/map-pub/survey-notes/glad-you-asked/igneous-sedimentary-metamorphic-rocks/"
+      }
+    ],
+    "body": "## 1. Look at the grains on an unpolished surface\n\nFind a rough edge or existing break. The light grains in the Lucerne Valley marble pictured above have an irregular crystalline texture. Compare them with the close-up of quartzite below. The quartzite has tightly packed grains too. On either rock, a coarse or sugary texture can suggest interlocking crystals and still leave the identity open.\n\n![Close-up of pale green interlocking grains in a quartzite specimen from near Echo Lake, Ontario](/images/quartzite-echo-lake.jpg)\n\nColor varies in both rocks. The green tint here belongs to this quartzite specimen, so focus on the grains that form most of the face.\n\n## 2. Compare the main rock with any veins\n\nA vein may have a different mineral composition from the rock around it. If you see a white streak across an otherwise even surface, photograph it and then examine a patch away from it. An isolated vein tells you little about the composition of the rest of the sample.\n\n| Check | Marble | Quartzite |\n| --- | --- | --- |\n| Main mineral | Usually calcite or dolomite | Usually quartz |\n| Appearance | Can show interlocking, sugary grains | Can show interlocking, sugary grains |\n| Hardness of a typical main mineral | Calcite 3, dolomite about 3.5–4 | Quartz 7 |\n\n## 3. Use hardness only on a suitable sample\n\nHardness tells you whether one material can scratch another. It requires direct contact, so photographs cannot establish it. On a loose specimen you can afford to mark, compare the main material with known references. Look for a real groove after wiping away the powder. Keep any veins and surface coatings out of the test area.\n\nFor a finished countertop or valued piece, request supplier documentation or a spare offcut. A stone sold under a trade name can look similar to several different geological materials. Preserve the supplier label alongside your own observations.\n\n## What to photograph\n\nTake an overview, a close-up of the main grains and a separate photo of any vein. Use the [marble guide](/guides/marble-rock/) for more examples and the [quartz vs. calcite comparison](/comparisons/quartz-vs-calcite/) for the mineral clues behind the difference. [Stone Identifier](/go/) can suggest a match from your photos. Confirm the result with a specimen check if hardness or composition matters.",
+    "answer": "Marble is made mainly of calcite or dolomite, while quartzite is made mainly of quartz. Both can look sugary. Inspect the main rock, then use mineral hardness on a suitable loose sample if appearance leaves both possibilities open."
   }
 ]
