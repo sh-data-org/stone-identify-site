@@ -83,7 +83,8 @@ function visit(
 ) {
   const document = new TestElement();
   const pathList = new TestElement();
-  pathList.content = '/ /apps/ /jewelry/ /go/ /app/ /guides/ /comparisons/quartz-vs-calcite/';
+  pathList.content =
+    '/ /apps/ /jewelry/ /go/ /app/ /guides/ /comparisons/quartz-vs-calcite/ /guides/magnetic-rock-identification/';
   document.children.set('meta[name="stone-public-paths"]', pathList);
   const container = new TestElement();
   const accept = new TestElement();
@@ -173,6 +174,27 @@ test('no analytics or attribution storage before consent or after rejection', ()
   page.storeClick();
   assert.equal(page.commands.length, 0);
   assert.equal(page.session.values.size, 0);
+});
+
+test('a consented Google landing keeps the search origin and records one store tap', () => {
+  const path = '/guides/magnetic-rock-identification/';
+  const url = 'https://stoneidentify.app' + path;
+  const title = 'How to Identify Magnetic Rocks With Photos';
+  const page = visit({ url, title, referrer: 'https://www.google.com/search?q=private' });
+  page.storeClick();
+  assert.equal(page.commands.length, 0);
+  assert.equal(page.scripts.length, 0);
+
+  page.accept.click();
+  page.storeClick();
+  const events = page.commands.filter(([type]) => type === 'event');
+  assert.deepEqual(events.map(([, name]) => name), ['page_view', 'app_store_click']);
+  assert.equal(parameters(events[0]).page_referrer, 'https://www.google.com');
+  assert.equal(parameters(events[0]).page_location, url);
+  assert.equal(parameters(events[0]).page_title, title);
+  assert.equal(parameters(events[1]).page_path, path);
+  assert.equal(parameters(events[1]).app_platform, 'ios');
+  assert.doesNotMatch(JSON.stringify(page.commands), /private/);
 });
 
 test('consented page views and store clicks carry AI source without raw query strings', () => {

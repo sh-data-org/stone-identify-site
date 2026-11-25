@@ -18,6 +18,15 @@ export const articleSchema = z
     displayTitle: z.string().min(5).max(90).optional(),
     description: z.string().min(50).max(180),
     answer: z.string().min(50).max(600),
+    photoLinks: z
+      .array(
+        z.object({
+          label: z.string().trim().min(1).max(50),
+          anchor: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
+        }),
+      )
+      .min(1)
+      .optional(),
     body: z.string().min(500),
     image: z.object({
       path: z.string().regex(/^\/images\/[a-zA-Z0-9_-]+\.(?:jpg|jpeg|png|webp)$/),

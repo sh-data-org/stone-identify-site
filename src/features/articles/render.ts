@@ -62,6 +62,7 @@ export function renderArticle(markdown: string) {
     allowedAttributes: {
       a: ['href', 'title', 'rel'],
       h2: ['id'],
+      h3: ['id'],
       figure: ['class'],
       img: ['src', 'alt', 'width', 'height', 'loading'],
     },
