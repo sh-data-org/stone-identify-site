@@ -32,6 +32,11 @@ for (const file of pages) {
   assert.match(html, /pt=125042532(?:&amp;|&)ct=stone-web/);
   assert.match(
     html,
+    /href="https:\/\/apps\.apple\.com\/us\/app\/id6782013876\?[^"]*ppid=74aba9b4-7b10-420f-84e0-0d40f6527bf3"/,
+    file,
+  );
+  assert.match(
+    html,
     /https:\/\/play\.google\.com\/store\/apps\/details\?id=com\.stocker\.stoneidentify/,
   );
   const title = html.match(/<title>(.*?)<\/title>/)?.[1];
