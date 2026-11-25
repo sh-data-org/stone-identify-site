@@ -4,7 +4,7 @@
   "campaign": "stone-web",
   "providerToken": "125042532",
   "websiteCustomProductPageId": "74aba9b4-7b10-420f-84e0-0d40f6527bf3",
-  "websiteCustomProductPageReady": false,
+  "websiteCustomProductPageReady": true,
   "measurementId": "G-W5JET4YGQH",
   "androidPackage": "com.stocker.stoneidentify"
 }

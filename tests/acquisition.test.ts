@@ -10,13 +10,14 @@ import {
 } from '../src/features/analytics/acquisition';
 import { analyticsReferrer, googleMeasurementId } from '../src/features/analytics/google';
 
-test('App Store buttons carry the verified shared website campaign', () => {
+test('App Store buttons open the Stone custom page with the shared website campaign', () => {
   const url = new URL(appStoreUrl());
   assert.equal(url.hostname, 'apps.apple.com');
   assert.equal(url.pathname, '/us/app/id6782013876');
   assert.equal(url.searchParams.get('pt'), '125042532');
   assert.equal(url.searchParams.get('ct'), 'stone-web');
-  assert.equal(url.searchParams.has('ppid'), false);
+  assert.equal(url.searchParams.get('ppid'), '74aba9b4-7b10-420f-84e0-0d40f6527bf3');
+  assert.equal(new URL(appStoreUrl(undefined, '123')).searchParams.has('ppid'), false);
   assert.throws(() => appStoreUrl('invalid'));
 });
 
