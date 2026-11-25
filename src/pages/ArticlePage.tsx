@@ -27,6 +27,15 @@ export function ArticlePage({ article }: { article: ArticleContent }) {
         <header className="article-heading">
           <h1>{article.displayTitle ?? article.title}</h1>
           <p className="intro">{article.answer}</p>
+          {article.photoLinks && (
+            <nav className="article-photo-links" aria-label="Specimen photos">
+              {article.photoLinks.map(({ label, anchor }) => (
+                <a key={anchor} href={`#${anchor}`}>
+                  {label}
+                </a>
+              ))}
+            </nav>
+          )}
           <p className="byline">
             <a href="/about/">Stone Identifier editorial team</a> · Published{' '}
             <time dateTime={article.published}>{article.published}</time>

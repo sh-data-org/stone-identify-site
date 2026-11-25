@@ -373,6 +373,18 @@ h3 {
   line-height: 1.65;
   margin-bottom: 16px;
 }
+.article-photo-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 16px;
+  margin-bottom: 12px;
+}
+.article-photo-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  text-decoration: underline;
+}
 .byline {
   font-size: 11px;
   color: #748076;
