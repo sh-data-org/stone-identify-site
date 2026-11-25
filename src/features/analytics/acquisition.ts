@@ -30,7 +30,21 @@ export function appStoreUrl(
     url.searchParams.set('ct', settings.campaign);
     url.searchParams.set('mt', '8');
   }
+  if (settings.websiteCustomProductPageReady && appId === settings.appId) {
+    url.searchParams.set('ppid', settings.websiteCustomProductPageId);
+  }
   return url.href;
+}
+
+export function smartAppBanner(pathname: string): string | undefined {
+  const section = pathname.split('/')[1];
+  if (section !== 'app' && section !== 'guides' && section !== 'comparisons') return;
+
+  return [
+    `app-id=${settings.appId}`,
+    `affiliate-data=pt=${settings.providerToken}&ct=stone-web-safari-banner`,
+    'app-argument=stoneidentify://scan?source=website_safari_banner',
+  ].join(', ');
 }
 
 export function appClickPlacement(destination: URL, placement?: string): string | null {
