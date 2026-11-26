@@ -58,6 +58,7 @@ export function renderArticle(markdown: string) {
       'figure',
       'figcaption',
       'img',
+      'div',
     ],
     allowedAttributes: {
       a: ['href', 'title', 'rel'],
@@ -66,6 +67,7 @@ export function renderArticle(markdown: string) {
       figure: ['class'],
       img: ['src', 'alt', 'width', 'height', 'loading'],
     },
+    allowedClasses: { div: ['photo-comparison'] },
     allowedSchemes: ['https', 'http'],
     exclusiveFilter: (frame) =>
       frame.tag === 'img' &&

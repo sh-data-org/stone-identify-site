@@ -71,6 +71,23 @@ test('article headings have usable anchors and reviewed images retain attributio
   }
 });
 
+test('photo comparisons preserve reviewed figures and strip arbitrary styling', () => {
+  const { html } = renderArticle(`
+<div class="photo-comparison other-class" style="display:none">
+
+![Glassy slag](/images/glassy-industrial-slag.jpg)
+
+![Basalt cross-section](/images/vesicular-basalt-section.webp)
+
+</div>
+`);
+
+  assert.match(html, /<div class="photo-comparison">[\s\S]*<\/div>/);
+  assert.equal(html.match(/<figure class="inline-photo">/g)?.length, 2);
+  assert.equal(html.match(/CC BY 2\.0/g)?.length, 2);
+  assert(!html.includes('other-class') && !html.includes('display:none'));
+});
+
 test('JSON-LD cannot close its script element', () => {
   assert(!jsonLd({ headline: '</script><script>alert(1)</script>' }).includes('<'));
 });
