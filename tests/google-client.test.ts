@@ -9,6 +9,7 @@ import * as google from '../src/features/analytics/google';
 import * as acquisition from '../src/features/analytics/acquisition';
 import * as articleContext from '../src/features/analytics/article-context';
 import * as aiReferral from '../src/features/analytics/ai-referral';
+import { routes } from '../src/routes';
 
 const client = ts.transpileModule(
   readFileSync(new URL('../src/features/analytics/google-client.ts', import.meta.url), 'utf8'),
@@ -83,8 +84,7 @@ function visit(
 ) {
   const document = new TestElement();
   const pathList = new TestElement();
-  pathList.content =
-    '/ /apps/ /jewelry/ /go/ /app/ /guides/ /comparisons/quartz-vs-calcite/ /guides/magnetic-rock-identification/';
+  pathList.content = routes.map((route) => route.path).join(' ');
   document.children.set('meta[name="stone-public-paths"]', pathList);
   const container = new TestElement();
   const accept = new TestElement();
@@ -161,6 +161,34 @@ test('names home, legacy directories, articles and missing pages on direct entry
     page.accept.click();
     const view = page.commands.find(([, name]) => name === 'page_view');
     assert.equal(parameters(view).page_title, expected);
+  }
+});
+
+test('slag guide uses its own page title on direct entry and from the basalt guide', () => {
+  const basaltPath = '/guides/vesicular-basalt/';
+  const slagPath = '/guides/industrial-slag-identification/';
+  const route = routes.find(({ path }) => path === slagPath);
+  assert(route);
+  const title = `${route.title} | Stone Identifier`;
+  const url = acquisition.acquisition.siteUrl + slagPath;
+  const basaltUrl = acquisition.acquisition.siteUrl + basaltPath;
+  const basalt = visit({ url: basaltUrl, consent: 'granted' });
+  const link = new TestElement();
+  link.href = `${url}#slag-basalt-photos`;
+  basalt.document.click(link);
+  const click = parameters(basalt.commands.find(([, name]) => name === 'site_click'));
+  assert.equal(click.page_path, basaltPath);
+  assert.equal(click.click_destination, slagPath);
+
+  for (const referrer of ['', basaltUrl]) {
+    const page = visit({ url: referrer ? link.href : url, title, referrer, consent: 'granted' });
+    const view = parameters(page.commands.find(([, name]) => name === 'page_view'));
+    assert.equal(
+      view.page_title,
+      'Is This Industrial Slag? How to Tell It From a Rock | Stone Identifier',
+    );
+    assert.equal(view.page_path, slagPath);
+    assert.equal(view.page_referrer, referrer);
   }
 });
 

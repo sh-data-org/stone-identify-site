@@ -835,6 +835,23 @@ p {
 .prose .inline-photo {
   margin: 32px 0;
 }
+.prose .photo-comparison {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+.prose .photo-comparison .inline-photo {
+  margin: 0;
+}
+.prose .photo-comparison .inline-photo img {
+  aspect-ratio: 1;
+}
+@media (max-width: 600px) {
+  .prose .photo-comparison {
+    grid-template-columns: 1fr;
+  }
+}
 .prose .inline-photo img {
   width: 100%;
   height: auto;
